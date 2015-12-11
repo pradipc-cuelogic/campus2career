@@ -40,17 +40,18 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="top-primary-nav reset-ul">
-                    <li><a href="javascript:void(0);" class="topicon"><span class="print">Print</span></a></li>
-                    <li><a href="javascript:void(0);" class="topicon"><span class="support">Settings</span></a></li>
+                    <li><a href="javascript:void(0);" class="topicon" data-toggle="tooltip" data-placement="bottom" data-title="Print"><span class="print">Print</span></a></li>
+                    <li><a href="javascript:void(0);" class="topicon" data-toggle="tooltip" data-placement="bottom" data-title="Support"><span class="support">Support</span></a></li>
                     <li class="dropdown">
                         <a href="javascript:void(0);" class="profile" data-toggle="dropdown">
                             <img src="images/header/profile-pic.jpg" class="top-pic">
-                            <p class="proname">Darsh Smith<br>
-                            <span class="schoolname">School Name</span></p>
+                            <p class="userName">
+                                <span>Darsh Smith</span>
+                                <span>School Name</span></p>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="javascript:void(0);">Edit</a></li>
                             <li><a href="javascript:void(0);">View</a></li>
+                            <li><a href="javascript:void(0);">Edit</a></li>
                         </ul>
                     </li>
                     <li><a href="javascript:void(0);" class="logout">Logout</a></li>
@@ -58,8 +59,12 @@
             </div>
             <div class="navbar">
                 <ul class="nav mainmenu">
-                    <li><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Home" class="icon home"></a></li>
-                    <li><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Dashboard" class="icon dashboard"></a></li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Home" class="icon home"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Dashboard" class="icon dashboard"></a>
+                    </li>
                     <li class="dropdown" data-toggle="tooltip" data-placement="top" data-title="Profile">
                         <a href="javascript:void(0);" data-toggle="dropdown" class="icon profile"></a>
                         <ul class="dropdown-menu">
@@ -67,7 +72,9 @@
                             <li><a href="javascript:void(0);">View</a></li>
                         </ul>
                     </li>
-                    <li><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Career Discovery" class="icon discovery"></a></li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Career Discovery" class="icon discovery"></a>
+                    </li>
                     <li class="dropdown" data-toggle="tooltip" data-placement="top" data-title="Opportunities">
                         <a href="javascript:void(0);" data-toggle="dropdown" class="icon opportunities"></a>
                         <ul class="dropdown-menu">
@@ -76,8 +83,12 @@
                             <li><a href="javascript:void(0);">Mentors</a></li>
                         </ul>
                     </li>
-                    <li><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Graduation Plan" class="icon plan"></a></li>
-                    <li><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Calender" class="icon calender"></a></li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Graduation Plan" class="icon plan"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Calender" class="icon calender"></a>
+                    </li>
                     <li class="dropdown" data-toggle="tooltip" data-placement="top" data-title="Messages">
                         <a href="javascript:void(0);" data-toggle="dropdown" class="icon message"><span class="badge">19</span></a>
                         <ul class="dropdown-menu">
@@ -85,17 +96,23 @@
                             <li><a href="javascript:void(0);">Sent</a></li>
                         </ul>
                     </li>
-                    <li><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Folders" class="icon folder"></a></li>
-                    <li><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Video Wall" class="icon video"></a></li>
-                    <li><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Settings" class="icon setting"></a></li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Folders" class="icon folder"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Video Wall" class="icon video"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Settings" class="icon setting"></a>
+                    </li>
                 </ul>
             </div>
         </div>
         <div class="short-intro">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-2 col-sm-2">
-                        <img src="images/header/profile-pic.jpg" class="profilepic" alt="Darsh Smith">
+                <div class="row pos-rel">
+                    <div class="profilepic">
+                        <img src="images/header/profile-pic.jpg" class="" alt="Darsh Smith">
                     </div>
                     <div class="col-md-2 col-sm-2">
                         <h2>Darsh Smith</h2>
@@ -109,29 +126,34 @@
                         <h3>School</h3>
                         <p>High School</p>
                     </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="notification">
+                    <div class="notification-wrap">
+                        <div class="notifications-slide">
+                            <a href="javascript:void(0);" class="bell-toggle"></a>
                             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                              <ol class="carousel-indicators">
-                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                              </ol>
-                              <div class="carousel-inner" role="listbox">
-                                <div class="active item">New announcement<br>
-                                Lorem ipsum dolor sit amet, consectetur ...<br>
-                                <a href="javascript:void(0);">More details...</a></div>
-                                <div class="item">New announcement<br>
-                                Lorem ipsum dolor sit amet, consectetur ...<br>
-                                <a href="javascript:void(0);">More details...</a></div>
-                                <div class="item">New announcement<br>
-                                Lorem ipsum dolor sit amet, consectetur ...<br>
-                                <a href="javascript:void(0);">More details...</a></div>
-                                <div class="item">New announcement<br>
-                                Lorem ipsum dolor sit amet, consectetur ...<br>
-                                <a href="javascript:void(0);">More details...</a></div>
-                              </div>
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="active item">New announcement
+                                        <br> Lorem ipsum dolor sit amet, consectetur ...
+                                        <br>
+                                        <a href="javascript:void(0);">More details...</a></div>
+                                    <div class="item">New announcement
+                                        <br> Lorem ipsum dolor sit amet, consectetur ...
+                                        <br>
+                                        <a href="javascript:void(0);">More details...</a></div>
+                                    <div class="item">New announcement
+                                        <br> Lorem ipsum dolor sit amet, consectetur ...
+                                        <br>
+                                        <a href="javascript:void(0);">More details...</a></div>
+                                    <div class="item">New announcement
+                                        <br> Lorem ipsum dolor sit amet, consectetur ...
+                                        <br>
+                                        <a href="javascript:void(0);">More details...</a></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -143,58 +165,66 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
-                    <div class="tile fuchsia">
-                        <div class="tile-icon">
-                            <img src="images/dashboard/tile-icon-profile.png" alt="Profile Tile">
-                        </div>
-                        <h3>Profile</h3>
-                        <p>Create your virtual resume and e-portfolio.</p>
-                        <div class="overlay">
-                            <h4>Complete your Profile</h4>
-                            <div class="progress">
-                              <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
-                                <span class="badge">65%</span>
-                              </div>
+                    <a href="javascript:void(0);">
+                        <div class="tile fuchsia">
+                            <div class="tile-icon">
+                                <img src="images/dashboard/tile-icon-profile.png" alt="Profile Tile">
                             </div>
-                            <p>Improve your profile Strength.</p>
+                            <h3>Profile</h3>
+                            <p>Create your virtual resume and e-portfolio.</p>
+                            <div class="overlay">
+                                <h4>Complete your Profile</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
+                                        <span class="badge">65%</span>
+                                    </div>
+                                </div>
+                                <p>Improve your profile Strength.</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <div class="tile orange">
-                        <div class="tile-icon">
-                            <img src="images/dashboard/tile-icon-pgp.png" alt="Profile Tile">
+                    <a href="javascript:void(0);">
+                        <div class="tile orange">
+                            <div class="tile-icon">
+                                <img src="images/dashboard/tile-icon-pgp.png" alt="Profile Tile">
+                            </div>
+                            <h3>PGP</h3>
+                            <p>Pick your personal pathway to success.</p>
                         </div>
-                        <h3>PGP</h3>
-                        <p>Pick your personal pathway to success.</p>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <div class="tile green">
-                        <div class="tile-icon">
-                            <img src="images/dashboard/tile-icon-video.png" alt="Profile Tile">
+                    <a href="javascript:void(0);">
+                        <div class="tile green">
+                            <div class="tile-icon">
+                                <img src="images/dashboard/tile-icon-video.png" alt="Profile Tile">
+                            </div>
+                            <h3>Video Wall</h3>
+                            <p>Watch college and career readiness videos.</p>
+                            <div class="overlay">
+                                <h4>4+ New Videos Added</h4>
+                                <ul class="videolist">
+                                    <li><a href="javascript:void(0);">Ingrid Bio</a></li>
+                                    <li><a href="javascript:void(0);">Study Breaks College Media Interview</a></li>
+                                    <li><a href="javascript:void(0);">Americorp Interview</a></li>
+                                    <li><a href="javascript:void(0);">We Are Harvard</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <h3>Video Wall</h3>
-                        <p>Watch college and career readiness videos.</p>
-                        <div class="overlay">
-                            <h4>4+ New Videos Added</h4>
-                            <ul class="videolist">
-                                <li><a href="javascript:void(0);">Ingrid Bio</a></li>
-                                <li><a href="javascript:void(0);">Study Breaks College Media Interview</a></li>
-                                <li><a href="javascript:void(0);">Americorp Interview</a></li>
-                                <li><a href="javascript:void(0);">We Are Harvard</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <div class="tile blue">
-                        <div class="tile-icon">
-                            <img src="images/dashboard/tile-icon-discovery.png" alt="Profile Tile">
+                    <a href="javascript:void(0);">
+                        <div class="tile blue">
+                            <div class="tile-icon">
+                                <img src="images/dashboard/tile-icon-discovery.png" alt="Profile Tile">
+                            </div>
+                            <h3>Discovery</h3>
+                            <p>Learn more about yourself and pathways</p>
                         </div>
-                        <h3>Discovery</h3>
-                        <p>Learn more about yourself and pathways</p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -351,6 +381,7 @@
             </div>
         </div>
     </footer>
+    <span class='scrollup'><img src="images/top.png" alt="scroll to top"></span>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

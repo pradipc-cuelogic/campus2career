@@ -7,6 +7,9 @@ img {
 a:focus, a:active, a:visited{
   outline: 0;
 }
+.pos-rel{
+  position: relative;
+}
 .reset-ul{
   list-style: none;
   margin: 0;
@@ -33,20 +36,20 @@ a:focus, a:active, a:visited{
     height: 260px;
     margin-bottom: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.scrollup{
+  display: none;
+  position: fixed;
+  right: 1.5%;
+  bottom: 10%;
+  width:40px;
+  height:40px;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: @transitionLinks;
+  &:hover{
+    opacity:0.9;
+  }
+}
 
 // Checkbox and Radio button
 /* Base for label styling */
@@ -171,3 +174,4 @@ footer{
 @import url('theme.less');
 @import url('fonts.less');
 @import url('../pages/dashboard.less');
+@import url('../layout/animation.less');
