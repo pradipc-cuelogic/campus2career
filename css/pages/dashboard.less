@@ -185,7 +185,7 @@
     		margin:15px 0 5px 0;
     	}
     	.notification{
-    		background:url(../../images/dashboard/notification.png) 10px 7px no-repeat;
+    		background:url(../../images/dashboard/notification.png) 12px 10px no-repeat, url(../../images/dashboard/notification-shadow.png) right top repeat-y;
     		background-color:rgba(0,0,0,0.7);
     		border-radius: 8px 0 0 8px;
     		height: 63px;
@@ -194,11 +194,11 @@
     		font-size: 12px;
     		line-height: 14px;
     		font-weight: 300;
-    		box-shadow:-2px 0px 6px #000 inset;
+    		/*box-shadow:-2px 0px 6px #000 inset;
     		-moz-box-shadow:-2px 0px 6px #000 inset;
     		-webkit-box-shadow:-2px 0px 6px #000 inset;
     		-o-box-shadow:-2px 0px 6px #000 inset;
-    		-ms-box-shadow:-2px 0px 6px #000 inset;
+    		-ms-box-shadow:-2px 0px 6px #000 inset;*/
     		.carousel-indicators{
     			width: 97%;
     			margin: 0;
@@ -295,9 +295,9 @@ section{
 				}
 			}
 			&.green{
-				background-color:#40bf7c;
+				background-color:#d4902b;
 				.tile-icon{
-					background-color:#52d18e;
+					background-color:#dca451;
 				}
 			}
 			&.blue{
@@ -349,8 +349,19 @@ section{
 					padding: 2px;
 					border-radius: 0;
 					background-color:#bd49b6;
+					overflow: visible;
 					.progress-bar{
 						background-color:#fad0f4;
+						position: relative;
+						.badge{
+							position: absolute;
+							right: 0;
+							bottom: 8px;
+							background:none;
+							padding: 3px 0;
+							font-size: 13px;
+							font-weight: normal;
+						}
 					}
 				}
 				p{
@@ -381,6 +392,71 @@ section{
 		}
 		.tile:hover .overlay{
 			top: 0;
+		}
+	}
+	&.notice{
+		padding: 0;
+		.col-md-3, .col-sm-6{
+			padding: 7px 0;
+			background-color:#f6f4f2;
+			.noticebox{
+				padding: 0 7px;
+				border-right: #dfd9d2 1px solid;
+				.head{
+					height: 34px;
+					padding: 0 40px 0 15px;
+					font-size: 15px;
+					font-weight: 300;
+					line-height: 34px;
+					text-align: right;
+					background:url(../../images/dashboard/notice-bg-sprite.png) right 7px no-repeat #c0f9bb;
+					&.shelve{
+						background-position: right -63px;
+					}
+					&.experience{
+						background-position: right -137px;
+					}
+					&.trending{
+						background-position: right -208px;
+					}
+				}
+				ul.update{
+					margin:10px 0 0 0;
+					padding: 0;
+					list-style: none;
+					li{
+						font-size: 13px;
+						font-weight: normal;
+						line-height: 18px;
+						color: #363636;
+						padding: 0 0 10px 15px;
+						position: relative;
+						.date{
+							font-size: 11px;
+							color: #898989;
+							display: block;
+						}
+					}
+					li:before{
+						content: "-";
+						position: absolute;
+						left:5px;
+						top:0px;
+					}
+				}
+				p{
+					text-align: right;
+					margin:0;
+					a{
+						font-size: 13px;
+						font-weight: 600;
+						color: #2491d9;
+					}
+				}
+			}
+		}
+		.col-md-3:last-child .noticebox{
+			border: none;
 		}
 	}
 	&.middle{
@@ -422,10 +498,14 @@ section{
 			border-width: 1px 0 0 1px;
 			border-radius: 0;
 			box-shadow: none;
-			.panel-body{
-				max-height: 310px;
-				overflow: auto;
-				padding:15px 15px 15px 0;
+			padding: 15px 0;
+			.slimScrollDiv{
+				overflow: visible !important;
+			}
+			.scroller{
+				/*max-height: 310px;
+				overflow: auto;*/
+				padding:0 15px 0 0;
 				margin-left: -15px;
 				.list-group{
 					margin:0 0 0 15px;
@@ -487,15 +567,16 @@ section{
 				}
 				.list-group-item.bullet:before{
 					content: "";
-					width: 10px;
-					height: 10px;
+					width:9px;
+					height:9px;
+					border:#f12506 1px solid;
+					border-radius:5px;
 					position: absolute;
 					left:-20px;
 					top: 50%;
 					margin-top: -5px;
 					z-index: 9;
-					background: url(../../images/dashboard/bullet.png) left center no-repeat;
-					background-size: 10px auto;
+					background-color:#FFF;
 				}
 				.list-group-item:nth-child(even) .dates .start{
 					background-color:#ffa26a;
@@ -511,19 +592,35 @@ section{
 	}
 }
 
-@media screen and (max-width:768px){
-	.navbar-fixed-top .short-intro .profilepic{
-		max-width:90%;
-		top: -42px;
+@media screen and (max-width:1024px){
+	.navbar-fixed-top .short-intro h2{
+		font-size: 16px;
+		margin-top: 5px;
+	}
+	.navbar-fixed-top .short-intro h3{
+		font-size: 14px;
+		margin-top: 5px;
 	}
 	.navbar-fixed-top .short-intro{
 		font-size: 12px;
 	}
-	.navbar-fixed-top .short-intro h2{
-		font-size: 16px;
+}
+@media screen and (min-width:769px) and (max-width:1024px){
+	section.tiles .tile h3{
+		font-size: 22px;
+		margin-top: 10px;
 	}
-	.navbar-fixed-top .short-intro h3{
-		font-size: 14px;
+	section.tiles .tile p{
+		font-size: 13px;
+	}
+	section.tiles .tile .overlay ul.videolist li{
+		font-size: 10px;
+	}
+}
+@media screen and (max-width:768px){
+	.navbar-fixed-top .short-intro .profilepic{
+		max-width:90%;
+		top: -42px;
 	}
 }
 

@@ -4,7 +4,7 @@ $(document).ready(function() {
     })
     //loginPageLayoutJS();
     $(window).resize(function() {
-      // loginPageLayoutJS();
+       //loginPageLayoutJS();
     });
     // $(window).scroll(function() {
     //     if ($(this).scrollTop() > 100) {
@@ -13,8 +13,20 @@ $(document).ready(function() {
     //         $('.scrollup').fadeOut();
     //     }
     // });
-});
 
+//***********************************BEGIN Slimscroller *****************************       
+    $('.scroller').each(function () {
+        $(this).slimScroll({
+                size: '3px',
+                color: '#e9e0d6',
+                height: $(this).attr("data-height"),
+                alwaysVisible: ($(this).attr("data-always-visible") == "1" ? true : false),
+                railVisible: ($(this).attr("data-rail-visible") == "1" ? true : false),
+                disableFadeOut: true
+        });
+    });
+//***********************************END Slimscroller ***************************** 
+});
 
 function loginPageLayoutJS() {
     var windowHeight = $(window).height();
