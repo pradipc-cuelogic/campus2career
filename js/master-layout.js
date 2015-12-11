@@ -2,9 +2,9 @@ $(document).ready(function() {
     $(function () {
         $('[data-toggle="tooltip"]').tooltip();
     })
-    //loginPageLayoutJS();
+    loginPageLayoutJS();
     $(window).resize(function() {
-       //loginPageLayoutJS();
+       loginPageLayoutJS();
     });
     // $(window).scroll(function() {
     //     if ($(this).scrollTop() > 100) {
@@ -35,8 +35,12 @@ function loginPageLayoutJS() {
     var loginBoxHeight = $('.login-box').outerHeight();
         $('.login-box-wrap').css('height', loginBoxHeight);
 
+        
     var loginWrapHeight = $('.login-box-wrap').outerHeight();
-        loginWrapTop = $('.login-box-wrap').offset().top;
+    var loginWrapObj = $('.login-box-wrap');    
+        if(loginWrapObj.length){
+            var loginWrapTop = loginWrapObj.offset().top;
+        }
 
         $('.more-links').css('top', loginWrapHeight + loginWrapTop);
 
