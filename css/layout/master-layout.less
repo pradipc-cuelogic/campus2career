@@ -26,30 +26,19 @@ a:focus, a:active, a:visited{
     background-size: cover;
     -o-background-size: cover;
 }
-
 .navbar-fixed-top{
-    background: url('../../images/header-bg.jpg') no-repeat center center;
+    background: url('../../images/header-bg.jpg') no-repeat top center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    height: 260px;
     margin-bottom: 0;
+    height: 124px;
 }
-.scrollup{
-  display: none;
-  position: fixed;
-  right: 1.5%;
-  bottom: 10%;
-  width:40px;
-  height:40px;
-  opacity: 0.3;
-  cursor: pointer;
-  transition: @transitionLinks;
-  &:hover{
-    opacity:0.9;
-  }
+.navbar-fixed-top.dashboard-header{
+    height: 260px;
 }
+
 
 // Checkbox and Radio button
 /* Base for label styling */
@@ -155,6 +144,22 @@ a:focus, a:active, a:visited{
 [type="radio"]:not(:checked):focus + label:before {
   border:0;
 }
+
+.scrollup{
+  display: none;
+  position: fixed;
+  right: 1.5%;
+  bottom: 10%;
+  width:40px;
+  height:40px;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: @transitionLinks;
+  &:hover{
+    opacity:0.9;
+  }
+}
+
 footer{
   background-color: #ebeef1;
   height: 46px;
