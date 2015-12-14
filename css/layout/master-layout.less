@@ -33,28 +33,12 @@ a:focus, a:active, a:visited{
     background-size: cover;
     -o-background-size: cover;
     margin-bottom: 0;
-}
-.navbar-fixed-top{    
     height: 124px;
 }
 .navbar-fixed-top.dashboard-header{
-    background-position:center center;
     height: 260px;
 }
-.scrollup{
-  display: none;
-  position: fixed;
-  right: 1.5%;
-  bottom: 10%;
-  width:40px;
-  height:40px;
-  opacity: 0.3;
-  cursor: pointer;
-  transition: @transitionLinks;
-  &:hover{
-    opacity:0.9;
-  }
-}
+
 
 // Checkbox and Radio button
 /* Base for label styling */
@@ -160,6 +144,22 @@ a:focus, a:active, a:visited{
 [type="radio"]:not(:checked):focus + label:before {
   border:0;
 }
+
+.scrollup{
+  display: none;
+  position: fixed;
+  right: 1.5%;
+  bottom: 10%;
+  width:40px;
+  height:40px;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: @transitionLinks;
+  &:hover{
+    opacity:0.9;
+  }
+}
+
 footer{
   background-color: #ebeef1;
   height: 46px;
