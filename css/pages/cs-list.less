@@ -1,0 +1,66 @@
+.middle form .form-field{
+    margin: 0 0 0 20px;
+    label{
+        display: block;
+        font-size: 15px;
+        font-weight: 300;
+        color:#5e5e5e;
+        line-height: 24px;
+    }
+}
+form .form-field .selectbox, .search-box .selectbox{
+    width:90%;
+    border:#e5e9ec 1px solid;
+    border-radius:8px;
+    padding:5px 8px;
+    box-shadow:0 1px 1px rgba(0,0,0,0.10) inset;
+    select{
+        width: 100%;
+        border:#FFF 1px solid;
+    }
+    input[type="text"]{
+        border:none;
+        padding: 0;
+        width: 100%;
+    }
+    select:focus, input:focus{
+        outline: none;
+    }
+}
+
+.add-student{
+    font-size: 13px;
+    font-weight: normal;
+    color: #FFF;
+    line-height: 20px;
+    padding: 7px 20px;
+    border-radius: 20px;
+    background: #305a83;
+}
+.add-student:before{
+    content: "+";
+    font-weight:600;
+    color: #FFF;
+    margin-right: 10px;
+}
+.add-student:hover, .add-student:focus{
+    color:#FFF;
+}
+.search-box{
+    label{
+        font-weight: normal;
+        margin-right: 8px;
+    }
+    input{
+        background:url(../../images/pgp/search-icon.png) 96% center no-repeat #FFF;
+        background-size: 16px auto;
+        border:#e5e9ec 1px solid;
+        border-radius:8px;
+        padding:5px 28px 5px 8px;
+        box-shadow:0 1px 1px rgba(0,0,0,0.10) inset;
+    }
+    .selectbox{
+        display: inline-block;
+        width: auto;
+    }
+}
