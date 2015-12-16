@@ -92,3 +92,8 @@ function notificationToggle() {
         }
     });
 }
+
+function setLayout() {
+    $('[data-toggle="tooltip"]').tooltip();
+    loginPageLayoutJS();
+}
