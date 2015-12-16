@@ -30,6 +30,17 @@ $(document).ready(function() {
             disableFadeOut: true
         });
     });
+
+    $('.cluster-thumbnails .dropdown-menu input:radio').click(function() {
+        var randomNum = 'check_' + $(this).attr('value');
+        var $this = $(this);
+        var radioBtn = $this.parents().eq(2).prev();
+        if ($(this).is(':checked')) {
+            radioBtn.attr('id', randomNum);
+        } else {
+            radioBtn.removeAttr('id');
+        }
+    });
 });
 
 
@@ -83,13 +94,35 @@ function scrollToTop() {
 
 
 function notificationToggle() {
-
-    $('.bell-toggle').on('click',function() {
-        if($('.notifications-slide').css('left')=='0px'){
-            $('.notifications-slide').animate({left: 292}, 500);        
-        }else{
-            $('.notifications-slide').animate({left: 0}, 500); 
+    $('.bell-toggle').on('click', function() {
+        if ($('.notifications-slide').css('left') == '0px') {
+            $('.notifications-slide').animate({
+                left: 292
+            }, 500);
+            setTimeout(function() {
+                $('.notifications-slide').addClass('bell-shadow');
+            }, 501);
+        } else {
+            $('.notifications-slide').animate({
+                left: 0
+            }, 500);
+            $('.notifications-slide').removeClass('bell-shadow');
         }
+    });
+}
+
+//________________________________ Custom Checkbox ________________________________ 
+
+function customCheckbox(checkboxName){
+    var checkBox = $('input[name="'+ checkboxName +'"]');
+    $(checkBox).each(function(){
+        $(this).wrap( "<span class='custom-checkbox'></span>" );
+        if($(this).is(':checked')){
+            $(this).parent().addClass("selected");
+        }
+    });
+    $(checkBox).click(function(){
+        $(this).parent().toggleClass("selected");
     });
 }
 
@@ -97,3 +130,4 @@ function setLayout() {
     $('[data-toggle="tooltip"]').tooltip();
     loginPageLayoutJS();
 }
+

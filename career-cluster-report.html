@@ -16,6 +16,7 @@
     <link href="css/bootstrap/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/layout/master-layout.less" rel="stylesheet/less">
+    <link href="css/pages/career-cluster.less" rel="stylesheet/less">
     <script src="js/less.min.js"></script>
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -110,7 +111,7 @@
         </div>
     </nav>
     <div class="page-title-wrap">
-        <h2>Graduation Plan</h2>
+        <h2>Career Cluster Report and Endorsement Recommendation</h2>
         <div class="notification-wrap">
             <div class="notifications-slide">
                 <a class="bell-toggle" href="javascript:void(0);"></a>
@@ -143,180 +144,103 @@
             </div>
         </div>
     </div>
-    <section class="graduation-plan">
+    <section class='select-cluster-wrap'>
         <div class="container">
-            <div class="row">
-                <div class="col-md-5 col-sm-6">
-                    <h2><span>Program of Study:</span> AH Art</h2>
-                    <h2><span>Program of Study 2:</span> BI Business Mgmt</h2>
-                </div>
-                <div class="col-md-5 col-sm-4">
-                    <h2><span>Graduate Year:</span> 2015</h2>
-                </div>
-                <div class="col-md-2 col-sm-2 text-right">
-                    <a href="javascript:void(0);" class="print" title="Print"></a>
-                    <a href="javascript:void(0);" class="pdf" title="Save as PDF"></a>
-                </div>
-            </div>
-            <div class="clearfix">&nbsp;</div>
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="grybg">
-                        <h4>Graduation Plan</h4>
-                        <table class="table no-more-tables">
-                            <tr>
-                                <th>&nbsp;</th>
-                                <th width="38%">Credits Earned</th>
-                                <th width="22%" align="center">Credits Needed</th>
-                            </tr>
-                            <tr>
-                                <td>English</td>
-                                <td>Coming Soon</td>
-                                <td align="center">5</td>
-                            </tr>
-                            <tr>
-                                <td>Math</td>
-                                <td>Coming Soon</td>
-                                <td align="center">5</td>
-                            </tr>
-                            <tr>
-                                <td>Science</td>
-                                <td>Coming Soon</td>
-                                <td align="center">4</td>
-                            </tr>
-                            <tr>
-                                <td>Social Studies</td>
-                                <td>Coming Soon</td>
-                                <td align="center">5</td>
-                            </tr>
-                            <tr>
-                                <td>Pathway</td>
-                                <td>Coming Soon</td>
-                                <td align="center">4</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="grybg">
-                        <div class="head">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6">
-                                    <h4>Post-Secondary Selection</h4>
-                                    <h4><span>South Texas College</span></h4>
-                                </div>
-                                <div class="col-md-6 col-sm-6">
-                                    <h4>Department</h4>
-                                    <h4><a href="javascript:void(0);">Arts and Sciences</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                        <h4>Careers Cluster</h4>
-                        <div class="row cluster">
-                            <div class="col-md-4 col-sm-4 text-center">
-                                <img src="images/pgp/arts-icon.png">
-                                <span class="orange-tick">Arts, A/V Technology & Communication</span>
-                            </div>
-                            <div class="col-md-4 col-sm-4 text-center">
-                                <img src="images/pgp/marketing-icon.png">
-                                <span class="blue-tick">Marketing</span>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <a class="report" href="javascript:void(0);">Career Clusters Report</a>
-                            </div>
-                        </div>
-                        <div class="divider"></div>
-                        <a class="schedule" href="javascript:void(0);">Post-Secondary Schedule</a>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="grybg endorsement">
-                        <h4>Endorsement Badges</h4>
-                        <div class="end-badge">
-                            <img src="images/pgp/endorsment-badge.png">
-                            <br> Art and Humanities
-                        </div>
-                        <div class="divider"></div>
-                        <h5>Achievement Label: <span>Distinguished</span></h5>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="grybg bottom">
-                        <h5>Performance Acknowledgements:</h5>
-                        <span class="badge">none selected</span>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="grybg bottom">
-                        <h5>Graduation Plan Completeness:</h5>
-                        <div class="progress-holder">
-                            <div class="progress">
-                                <div style="width:25%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" role="progressbar" class="progress-bar">
-                                    <span class="badge">25%</span>
-                                </div>
-                            </div>
-                            <span>9th<br>Grade</span>
-                            <span>10th<br>Grade</span>
-                            <span>11th<br>Grade</span>
-                            <span>12th<br>Grade</span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-            </div>
+            <h5>Please select up to two Careers Cluster based on your results from Career Discovery</h5>
+            <ul class="cluster-thumbnails">
+                <li class="dropdown">
+                    <div class="thumbnail" data-toggle="dropdown"><img class="image_picker_image" src="images/career-cluster/default-cluster.png"></div>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <label>
+                                <input type="radio" name="rank" id="" value="firstRank" class="check"><span><img src='images/career-cluster/first-rank.png'><br>First Rank</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="rank" id="" value="secondRank" class="check"><span><img src='images/career-cluster/second-rank.png'><br>Second Rank</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <div class="thumbnail" data-toggle="dropdown"><img class="image_picker_image" src="images/career-cluster/default-cluster.png"></div>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <label>
+                                <input type="radio" name="rank" id="" value="firstRank" class="check"><span><img src='images/career-cluster/first-rank.png'><br>First Rank</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="rank" id="" value="secondRank" class="check"><span><img src='images/career-cluster/second-rank.png'><br>Second Rank</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <div class="thumbnail" data-toggle="dropdown"><img class="image_picker_image" src="images/career-cluster/default-cluster.png"></div>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <label>
+                                <input type="radio" name="rank" id="" value="firstRank" class="check"><span><img src='images/career-cluster/first-rank.png'><br>First Rank</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="rank" id="" value="secondRank" class="check"><span><img src='images/career-cluster/second-rank.png'><br>Second Rank</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <div class="thumbnail" data-toggle="dropdown"><img class="image_picker_image" src="images/career-cluster/default-cluster.png"></div>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <label>
+                                <input type="radio" name="rank" id="" value="firstRank" class="check"><span><img src='images/career-cluster/first-rank.png'><br>First Rank</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="rank" id="" value="secondRank" class="check"><span><img src='images/career-cluster/second-rank.png'><br>Second Rank</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <div class="thumbnail" data-toggle="dropdown"><img class="image_picker_image" src="images/career-cluster/default-cluster.png"></div>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <label>
+                                <input type="radio" name="rank" id="" value="firstRank" class="check"><span><img src='images/career-cluster/first-rank.png'><br>First Rank</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="rank" id="" value="secondRank" class="check"><span><img src='images/career-cluster/second-rank.png'><br>Second Rank</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <div class="thumbnail" data-toggle="dropdown"><img class="image_picker_image" src="images/career-cluster/default-cluster.png"></div>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <label>
+                                <input type="radio" name="rank" id="" value="firstRank" class="check"><span><img src='images/career-cluster/first-rank.png'><br>First Rank</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="rank" id="" value="secondRank" class="check"><span><img src='images/career-cluster/second-rank.png'><br>Second Rank</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <div class="thumbnail" data-toggle="dropdown"><img class="image_picker_image" src="images/career-cluster/default-cluster.png"></div>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <label>
+                                <input type="radio" name="rank" id="" value="firstRank" class="check"><span><img src='images/career-cluster/first-rank.png'><br>First Rank</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="rank" id="" value="secondRank" class="check"><span><img src='images/career-cluster/second-rank.png'><br>Second Rank</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-    </section>
-    <section class="schedule">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Your Schedule
-                        <a href="javascript:void(0);" class="btn-right">Complete Plan</a>
-                        <a href="javascript:void(0);" class="btn-right">Update Plan</a>
-                    </h3>
-                    <table class="table datatable">
-                        <tr>
-                            <th width="25%" class="disabled">9th Grade</th>
-                            <th width="25%">10th Grade</th>
-                            <th width="25%">11th Grade</th>
-                            <th width="25%">12th Grade</th>
-                        </tr>
-                        <tr>
-                            <td class="disabled">English I PAP</td>
-                            <td>English II</td>
-                            <td>English III</td>
-                            <td>Debate III</td>
-                        </tr>
-                        <tr>
-                            <td class="disabled">Algebra I</td>
-                            <td>Geometry</td>
-                            <td>Algebra II</td>
-                            <td>Calculus AP AB</td>
-                        </tr>
-                        <tr>
-                            <td class="disabled">Research Methods in Social Studies 1</td>
-                            <td>World History PAP</td>
-                            <td>n/a</td>
-                            <td>n/a</td>
-                        </tr>
-                        <tr>
-                            <td class="disabled">Biology PAP</td>
-                            <td>n/a</td>
-                            <td>Chemistry AP</td>
-                            <td>n/a</td>
-                        </tr>
-                        <tr>
-                            <td class="disabled">Agricultural Facilities and Design & Fabrication</td>
-                            <td>n/a</td>
-                            <td>n/a</td>
-                            <td>n/a</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
     </section>
     <footer>
         <div class="container">
