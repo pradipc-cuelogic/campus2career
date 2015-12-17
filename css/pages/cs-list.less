@@ -298,4 +298,31 @@ table.datatable{
     .table{
         margin-top: 20px;
     }
+    .datatable{
+        > tbody > tr{
+            > td{
+            position: relative;
+            }
+            > td:after{
+                content: "";
+                height: 3px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+            > td.dual:after{
+                background-color:#f77474;
+            }
+            > td.ap:after{
+                background-color:#92dc61;
+            }
+            > td.ib:after{
+                background-color:#f7cb74;
+            }
+            > td.articulated:after{
+                background-color:#b296eb;
+            }
+        }
+    }
 }
