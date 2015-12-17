@@ -22,6 +22,13 @@ a:visited {
     outline: 0!important;
 }
 
+input:focus,
+.form-control:focus {
+    outline: none;
+    box-shadow: 4px 4px 5px #f0f0f0 inset;
+    border: 1px solid #dbdbdb;
+}
+
 .pos-rel {
     position: relative;
 }
@@ -136,9 +143,11 @@ a:visited {
 }
 
 // Checkbox and Radio button
+
 /* =================== Custom Checkbox =================== */
 
 .custom-checkbox {
+    cursor: pointer;
     width: 17px;
     height: 17px;
     display: inline-block;
@@ -173,6 +182,7 @@ a:visited {
 
 
 /* =================== Custom Checkbox =================== */
+
 
 /* Base for label styling */
 
@@ -265,14 +275,12 @@ a:visited {
 
 /* checked mark aspect changes */
 
-[type="checkbox"]:not(:checked) + label:after,
-[type="radio"]:not(:checked) + label:after {
+[type="checkbox"]:not(:checked) + label:after{
     opacity: 0;
     transform: scale(0);
 }
 
-[type="checkbox"]:checked + label:after,
-[type="radio"]:checked + label:after {
+[type="checkbox"]:checked + label:after{
     opacity: 1;
     transition: @transitionLinks;
 }
@@ -281,21 +289,17 @@ a:visited {
 /* disabled checkbox */
 
 [type="checkbox"]:disabled:not(:checked) + label:before,
-[type="checkbox"]:disabled:checked + label:before,
-[type="radio"]:disabled:not(:checked) + label:before,
-[type="radio"]:disabled:checked + label:before {
+[type="checkbox"]:disabled:checked + label:before{
     box-shadow: none;
     border-color: #bbb;
     background-color: #ddd;
 }
 
-[type="checkbox"]:disabled:checked + label:after,
-[type="radio"]:disabled:checked + label:after {
+[type="checkbox"]:disabled:checked + label:after{
     color: #999;
 }
 
-[type="checkbox"]:disabled + label,
-[type="radio"]:disabled + label {
+[type="checkbox"]:disabled + label{
     color: #aaa;
 }
 
@@ -303,9 +307,7 @@ a:visited {
 /* accessibility */
 
 [type="checkbox"]:checked:focus + label:before,
-[type="checkbox"]:not(:checked):focus + label:before,
-[type="radio"]:checked:focus + label:before,
-[type="radio"]:not(:checked):focus + label:before {
+[type="checkbox"]:not(:checked):focus + label:before{
     border: 0;
 }
 
@@ -313,7 +315,7 @@ a:visited {
     display: none;
     position: fixed;
     right: 1.5%;
-    bottom: 10%;
+    bottom: 8%;
     width: 40px;
     height: 40px;
     opacity: 0.3;
@@ -350,15 +352,17 @@ footer {
     }
     &.btn-reset {
         background-color: #dcdee1;
+        &:hover {
+            color: #666
+        }
     }
 }
 
 // Modal Classes
 .modal {
     .modal-header {
-        
         ul.nav-tabs {
-            padding:5px 0 15px 0;
+            padding: 5px 0 15px 0;
             border: 0;
             position: relative;
             bottom: -15px;
@@ -374,39 +378,28 @@ footer {
                 color: #000;
             }
         }
+        .close {
+            z-index: 10;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 24px;
+            height: 24px;
+            &:hover,
+            &:focus {
+                color: #000;
+                cursor: pointer;
+                opacity: 0.8;
+                text-decoration: none;
+            }
+        }
     }
     .modal-body {
         label {
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 300;
             color: #474b4f;
             margin-bottom: 10px;
-        }
-        .input-holder {
-            margin-bottom: 15px;
-            position: relative;
-            border-radius: 3px;
-            overflow: hidden;
-            input[type="text"] {
-                border: #dbdbdb 1px solid;
-                border-radius: 3px;
-                height: 36px;
-                padding: 5px 20px 5px 10px;
-                width: 100%;
-            }
-            &.required:after {
-                width: 17px;
-                height: 17px;
-                content: "*";
-                color: #FFF;
-                line-height: 15px;
-                padding: 0 0 7px 8px;
-                margin: 1px 1px 0 0;
-                position: absolute;
-                top: 0;
-                right: 0;
-                background: url(../../images/req-bg.png) no-repeat;
-            }
         }
     }
     .modal-footer {
@@ -414,11 +407,36 @@ footer {
         margin: 0 15px;
     }
 }
-.modal-header .close {
-    margin-top: -2px;
-    position: absolute;
-    right: 10px;
-    top: 10px;
+
+// Form Classes
+.input-holder {
+    margin-bottom: 15px;
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+    input[type="text"] {
+        border: #dbdbdb 1px solid;
+        border-radius: 3px;
+        height: 36px;
+        padding: 5px 20px 5px 10px;
+        width: 100%;
+    }
+    &.required:after {
+        color: #fff;
+        content: "*";
+        font-size: 12px;
+        font-weight: 500;
+        height: 17px;
+        line-height: 15px;
+        margin: 1px 1px 0 0;
+        padding: 0 0 7px 8px;
+        position: absolute;
+        right: 1px;
+        text-align: center;
+        top: 1px;
+        width: 17px;
+        background: url(../../images/req-bg.png) no-repeat;
+    }
 }
 
 @import url('../pages/before-login.less');

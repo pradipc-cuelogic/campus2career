@@ -150,8 +150,8 @@
                     <div class="col-md-3 col-sm-4">
                         <div class="form-field">
                             <label>School</label>
-                            <div class="selectbox">
-                                <select class="">
+                            <div class="">
+                                <select class="form-control">
                                     <option>Select School</option>
                                     <option>School Name 1</option>
                                     <option>School Name 2</option>
@@ -165,8 +165,8 @@
                     <div class="col-md-3 col-sm-4">
                         <div class="form-field">
                             <label>Grade Level</label>
-                            <div class="selectbox">
-                                <select class="">
+                            <div class="">
+                                <select class="form-control">
                                     <option>Select Grade</option>
                                     <option>Grade Level 1</option>
                                     <option>Grade Level 2</option>
@@ -180,8 +180,8 @@
                     <div class="col-md-4 col-sm-4">
                         <div class="form-field">
                             <label>Filter students by</label>
-                            <div class="selectbox">
-                                <input type="text" name="filterby">
+                            <div class="">
+                                <input type="text" name="filterby" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -196,7 +196,7 @@
                     <div class="search-box">
                         <label>Records per page</label>
                         <div class="selectbox">
-                            <select class="">
+                            <select class="form-control">
                                 <option>80</option>
                                 <option>100</option>
                                 <option>120</option>
@@ -511,17 +511,23 @@
                                 <div class="modal-body clearfix">
                                     <form>
                                         <div class="row">
-                                            <div class="form-group col-md-12 required">
+                                            <div class="form-group col-md-12">
                                                 <label class="control-label">Student ID</label>
-                                                <input type="text" value="" placeholder="Student ID" name="UserKey" maxlength="50" id="UserKey" data-val-required="Student ID required" data-val="true" class="form-control">
+                                                <div class="input-holder required">
+                                                    <input type="text" value="" placeholder="Student ID" name="UserKey" maxlength="50" id="UserKey" data-val-required="Student ID required" data-val="true" class="form-control">
+                                                </div>
                                             </div>
-                                            <div class="form-group required col-md-6">
+                                            <div class="form-group col-md-6">
                                                 <label class="control-label">First Name</label>
-                                                <input type="text" value="" placeholder="First Name" name="FirstName" maxlength="30" id="FirstName" data-val-required="First Name required" data-val="true" class="form-control">
+                                                <div class="input-holder required">
+                                                    <input type="text" value="" placeholder="First Name" name="FirstName" maxlength="30" id="FirstName" data-val-required="First Name required" data-val="true" class="form-control">
+                                                </div>
                                             </div>
-                                            <div class="form-group required col-md-6">
+                                            <div class="form-group col-md-6">
                                                 <label class="control-label">Last Name</label>
-                                                <input type="text" value="" placeholder="Last Name" name="LastName" maxlength="30" id="LastName" data-val-required="Last Name required" data-val="true" class="form-control">
+                                                <div class="input-holder required">
+                                                    <input type="text" value="" placeholder="Last Name" name="LastName" maxlength="30" id="LastName" data-val-required="Last Name required" data-val="true" class="form-control">
+                                                </div>
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <label class="control-label">Email</label>
@@ -531,39 +537,47 @@
                                                 <label class="control-label">Username</label>
                                                 <input type="text" value="" placeholder="Username" name="Username" maxlength="40" id="Username" data-val-required="Username required" data-val="true" class="form-control">
                                             </div>
-                                            <div class="form-group required col-md-6">
+                                            <div class="form-group col-md-6">
                                                 <label class="control-label">Password</label>
-                                                <input type="password" placeholder="Password" name="Password" id="Password" class="form-control">
+                                                <div class="input-holder required">
+                                                    <input type="password" placeholder="Password" name="Password" id="Password" class="form-control">
+                                                </div>
                                             </div>
-                                            <div class="form-group required col-md-6">
+                                            <div class="form-group col-md-6">
                                                 <label class="control-label">Confirm Password</label>
-                                                <input type="password" placeholder="Confirm Password" name="ConfirmPassword" id="ConfirmPassword" class="form-control">
+                                                <div class="input-holder required">
+                                                    <input type="password" placeholder="Confirm Password" name="ConfirmPassword" id="ConfirmPassword" class="form-control">
+                                                </div>
                                             </div>
-                                            <div class="form-group required col-md-6">
+                                            <div class="form-group col-md-6">
                                                 <label class="control-label">School</label>
-                                                <select name="SchoolId" id="SchoolId" data-val-number="The field SchoolId must be a number." data-val="true" class="form-control">
-                                                    <option value="">Select School</option>
-                                                    <option value="2">Bastrop High School</option>
-                                                    <option value="1">Bastrop Middle School</option>
-                                                    <option value="4">Cedar Creek High School</option>
-                                                    <option value="3">Cedar Creek Middle School</option>
-                                                    <option value="5">Colorado River Collegiate Academy</option>
-                                                    <option value="268">Gateway DAEP</option>
-                                                    <option value="100">Genesis High School</option>
-                                                </select>
+                                                <div class="input-holder required">
+                                                    <select name="SchoolId" id="SchoolId" data-val-number="The field SchoolId must be a number." data-val="true" class="form-control">
+                                                        <option value="">Select School</option>
+                                                        <option value="2">Bastrop High School</option>
+                                                        <option value="1">Bastrop Middle School</option>
+                                                        <option value="4">Cedar Creek High School</option>
+                                                        <option value="3">Cedar Creek Middle School</option>
+                                                        <option value="5">Colorado River Collegiate Academy</option>
+                                                        <option value="268">Gateway DAEP</option>
+                                                        <option value="100">Genesis High School</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                            <div class="form-group required col-md-6">
+                                            <div class="form-group col-md-6">
                                                 <label class="control-label">Grade</label>
-                                                <select name="GradeId" id="GradeId" data-val-number="The field GradeId must be a number." data-val="true" class="form-control">
-                                                    <option value="">Select Grade</option>
-                                                    <option value="1">6th Grade</option>
-                                                    <option value="2">7th Grade</option>
-                                                    <option value="3">8th Grade</option>
-                                                    <option value="4">Freshman</option>
-                                                    <option value="5">Sophomore</option>
-                                                    <option value="6">Junior</option>
-                                                    <option value="7">Senior</option>
-                                                </select>
+                                                <div class="input-holder required">
+                                                    <select name="GradeId" id="GradeId" data-val-number="The field GradeId must be a number." data-val="true" class="form-control">
+                                                        <option value="">Select Grade</option>
+                                                        <option value="1">6th Grade</option>
+                                                        <option value="2">7th Grade</option>
+                                                        <option value="3">8th Grade</option>
+                                                        <option value="4">Freshman</option>
+                                                        <option value="5">Sophomore</option>
+                                                        <option value="6">Junior</option>
+                                                        <option value="7">Senior</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
                                     </form>
