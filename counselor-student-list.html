@@ -146,63 +146,57 @@
     <section class="middle">
         <div class="container">
             <div class="row">
-            <form>
-                <div class="col-md-3 col-sm-4">
-                    <div class="form-field">
-                        <label>School</label>
-                        <div class="selectbox">
-                            <select class="">
-                                <option>Select School</option>
-                                <option>School Name 1</option>
-                                <option>School Name 2</option>
-                                <option>School Name 3</option>
-                                <option>School Name 4</option>
-                                <option>School Name 5</option>
-                            </select>
+                <form>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="form-field">
+                            <label>School</label>
+                            <div class="">
+                                <select class="form-control">
+                                    <option>Select School</option>
+                                    <option>School Name 1</option>
+                                    <option>School Name 2</option>
+                                    <option>School Name 3</option>
+                                    <option>School Name 4</option>
+                                    <option>School Name 5</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-4">
-                    <div class="form-field">
-                        <label>Grade Level</label>
-                        <div class="selectbox">
-                            <select class="">
-                                <option>Select Grade</option>
-                                <option>Grade Level 1</option>
-                                <option>Grade Level 2</option>
-                                <option>Grade Level 3</option>
-                                <option>Grade Level 4</option>
-                                <option>Grade Level 5</option>
-                            </select>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="form-field">
+                            <label>Grade Level</label>
+                            <div class="">
+                                <select class="form-control">
+                                    <option>Select Grade</option>
+                                    <option>Grade Level 1</option>
+                                    <option>Grade Level 2</option>
+                                    <option>Grade Level 3</option>
+                                    <option>Grade Level 4</option>
+                                    <option>Grade Level 5</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                    <div class="form-field">
-                        <label>Filter students by</label>
-                        <div class="selectbox">
-                            <input type="text" name="filterby">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="form-field">
+                            <label>Filter students by</label>
+                            <div class="">
+                                <input type="text" name="filterby" class="form-control">
+                            </div>
                         </div>
                     </div>
-                </div>
-            </form>
+                </form>
             </div>
             <div class="divider"></div>
             <div class="row">
                 <div class="col-md-4 col-sm-4">
-                    <a href="javascript:void(0);" class="add-student">Create Student Account</a>
+                    <a href="javascript:void(0);" class="add-student btn btn-primary" data-target="#create-student" data-toggle="modal">Create Student Account</a>
                 </div>
-                <div class="col-md-4 col-sm-5 text-right">
-                    <div class="search-box">
-                        <label>Search</label>
-                        <input type="text" name="search">
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-3 text-right">
+                <div class="search-records-wrap">
                     <div class="search-box">
                         <label>Records per page</label>
                         <div class="selectbox">
-                            <select class="">
+                            <select class="form-control">
                                 <option>80</option>
                                 <option>100</option>
                                 <option>120</option>
@@ -211,206 +205,406 @@
                             </select>
                         </div>
                     </div>
+                    <div class="search-box">
+                        <label>Search</label>
+                        <input type="text" name="search">
+                    </div>
                 </div>
             </div>
             <div class="clearfix">&nbsp;</div>
             <div class="row">
                 <div class="col-md-12">
-                  <div class="table-over">
-                    <table class="table datatable">
-                        <tr>
-                            <th width="4%">Select</th>
-                            <th>ID</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Username</th>
-                            <th>School</th>
-                            <th>Grade</th>
-                            <th>Status</th>
-                            <th width="7%">Lock PGP</th>
-                            <th width="9%">Reports</th>
-                            <th width="6%">&nbsp;</th>
-                        </tr>
-                        <tr>
-                            <td align="center"><label><input type="checkbox" name="confirm" checked="checked" value="yes" /></label></td>
-                            <td>12345</td>
-                            <td>Bastrop</td>
-                            <td>Betty</td>
-                            <td>demostudent</td>
-                            <td>Bastrop High School</td>
-                            <td>8th Grade</td>
-                            <td><ul><li class="new">New</li></ul></td>
-                            <td align="center"><a href="javascript:void(0);" class="locked"></a></td>
-                            <td><a href="javascript:void(0);" class="link">Career Cluster Grad Plan</a></td>
-                            <td align="center">
-                                <a href="javascript:void(0);" class="view" data-toggle="modal" data-target="#myModal"></a>
-                                <a href="javascript:void(0);" class="edit" data-toggle="modal" data-target="#myModal"></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="center"><label><input type="checkbox" name="confirm" value="yes" /></label></td>
-                            <td>12345</td>
-                            <td>Bastrop</td>
-                            <td>Betty</td>
-                            <td>demostudent</td>
-                            <td>Bastrop High School</td>
-                            <td>8th Grade</td>
-                            <td><ul><li class="incomplete">Incomplete</li></ul></td>
-                            <td align="center"><a href="javascript:void(0);" class="unlocked"></a></td>
-                            <td><a href="javascript:void(0);" class="link">Career Cluster Grad Plan</a></td>
-                            <td align="center">
-                                <a href="javascript:void(0);" class="view" data-toggle="modal" data-target="#myModal"></a>
-                                <a href="javascript:void(0);" class="edit" data-toggle="modal" data-target="#myModal"></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="center"><label><input type="checkbox" name="confirm" checked="checked" value="yes" /></label></td>
-                            <td>12345</td>
-                            <td>Bastrop</td>
-                            <td>Betty</td>
-                            <td>demostudent</td>
-                            <td>Bastrop High School</td>
-                            <td>8th Grade</td>
-                            <td><ul><li class="completed">Completed</li></ul></td>
-                            <td align="center"><a href="javascript:void(0);" class="unlocked"></a></td>
-                            <td><a href="javascript:void(0);" class="link">Career Cluster Grad Plan</a></td>
-                            <td align="center">
-                                <a href="javascript:void(0);" class="view" data-toggle="modal" data-target="#myModal"></a>
-                                <a href="javascript:void(0);" class="edit" data-toggle="modal" data-target="#myModal"></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="center"><label><input type="checkbox" name="confirm" value="yes" /></label></td>
-                            <td>12345</td>
-                            <td>Bastrop</td>
-                            <td>Betty</td>
-                            <td>demostudent</td>
-                            <td>Bastrop High School</td>
-                            <td>8th Grade</td>
-                            <td><ul><li class="updated">Updated</li></ul></td>
-                            <td align="center"><a href="javascript:void(0);" class="unlocked"></a></td>
-                            <td><a href="javascript:void(0);" class="link">Career Cluster Grad Plan</a></td>
-                            <td align="center">
-                                <a href="javascript:void(0);" class="view" data-toggle="modal" data-target="#myModal"></a>
-                                <a href="javascript:void(0);" class="edit" data-toggle="modal" data-target="#myModal"></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="center"><label><input type="checkbox" name="confirm" checked="checked" value="yes" /></label></td>
-                            <td>12345</td>
-                            <td>Bastrop</td>
-                            <td>Betty</td>
-                            <td>demostudent</td>
-                            <td>Bastrop High School</td>
-                            <td>8th Grade</td>
-                            <td><ul><li class="incomplete">Incomplete</li></ul></td>
-                            <td align="center"><a href="javascript:void(0);" class="unlocked"></a></td>
-                            <td><a href="javascript:void(0);" class="link">Career Cluster Grad Plan</a></td>
-                            <td align="center">
-                                <a href="javascript:void(0);" class="view" data-toggle="modal" data-target="#myModal"></a>
-                                <a href="javascript:void(0);" class="edit" data-toggle="modal" data-target="#myModal"></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="center"><label><input type="checkbox" name="confirm" value="yes" /></label></td>
-                            <td>12345</td>
-                            <td>Bastrop</td>
-                            <td>Betty</td>
-                            <td>demostudent</td>
-                            <td>Bastrop High School</td>
-                            <td>8th Grade</td>
-                            <td><ul><li class="incomplete">Incomplete</li></ul></td>
-                            <td align="center"><a href="javascript:void(0);" class="unlocked"></a></td>
-                            <td><a href="javascript:void(0);" class="link">Career Cluster Grad Plan</a></td>
-                            <td align="center">
-                                <a href="javascript:void(0);" class="view" data-toggle="modal" data-target="#myModal"></a>
-                                <a href="javascript:void(0);" class="edit" data-toggle="modal" data-target="#myModal"></a>
-                            </td>
-                        </tr>
-                    </table>
-                  </div>
+                    <div class="table-over">
+                        <table class="table datatable">
+                            <tr>
+                                <th width="4%">Select</th>
+                                <th>ID</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Username</th>
+                                <th>School</th>
+                                <th>Grade</th>
+                                <th>Status</th>
+                                <th width="7%">Lock PGP</th>
+                                <th width="9%">Reports</th>
+                                <th width="6%">&nbsp;</th>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <label>
+                                        <input type="checkbox" name="confirm" checked="checked" value="yes" />
+                                    </label>
+                                </td>
+                                <td>12345</td>
+                                <td>Bastrop</td>
+                                <td>Betty</td>
+                                <td>demostudent</td>
+                                <td>Bastrop High School</td>
+                                <td>8th Grade</td>
+                                <td>
+                                    <ul>
+                                        <li class="new">New</li>
+                                    </ul>
+                                </td>
+                                <td align="center">
+                                    <a href="javascript:void(0);" class="locked"></a>
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0);">Career Cluster</a>
+                                    <a href="javascript:void(0);">Grad Plan</a>
+                                </td>
+                                <td align="center">
+                                    <a href="javascript:void(0);" class="view"></a>
+                                    <a href="javascript:void(0);" class="edit" data-toggle="modal" data-target="#edit-student-details"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <label>
+                                        <input type="checkbox" name="confirm" value="yes" />
+                                    </label>
+                                </td>
+                                <td>12345</td>
+                                <td>Bastrop</td>
+                                <td>Betty</td>
+                                <td>demostudent</td>
+                                <td>Bastrop High School</td>
+                                <td>8th Grade</td>
+                                <td>
+                                    <ul>
+                                        <li class="incomplete">Incomplete</li>
+                                    </ul>
+                                </td>
+                                <td align="center">
+                                    <a href="javascript:void(0);" class="unlocked"></a>
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0);">Career Cluster</a>
+                                    <a href="javascript:void(0);">Grad Plan</a>
+                                </td>
+                                <td align="center">
+                                    <a href="javascript:void(0);" class="view"></a>
+                                    <a href="javascript:void(0);" class="edit" data-toggle="modal" data-target="#edit-student-details"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <label>
+                                        <input type="checkbox" name="confirm" checked="checked" value="yes" />
+                                    </label>
+                                </td>
+                                <td>12345</td>
+                                <td>Bastrop</td>
+                                <td>Betty</td>
+                                <td>demostudent</td>
+                                <td>Bastrop High School</td>
+                                <td>8th Grade</td>
+                                <td>
+                                    <ul>
+                                        <li class="completed">Completed</li>
+                                    </ul>
+                                </td>
+                                <td align="center">
+                                    <a href="javascript:void(0);" class="unlocked"></a>
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0);">Career Cluster</a>
+                                    <a href="javascript:void(0);">Grad Plan</a>
+                                </td>
+                                <td align="center">
+                                    <a href="javascript:void(0);" class="view"></a>
+                                    <a href="javascript:void(0);" class="edit" data-toggle="modal" data-target="#edit-student-details"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <label>
+                                        <input type="checkbox" name="confirm" value="yes" />
+                                    </label>
+                                </td>
+                                <td>12345</td>
+                                <td>Bastrop</td>
+                                <td>Betty</td>
+                                <td>demostudent</td>
+                                <td>Bastrop High School</td>
+                                <td>8th Grade</td>
+                                <td>
+                                    <ul>
+                                        <li class="updated">Updated</li>
+                                    </ul>
+                                </td>
+                                <td align="center">
+                                    <a href="javascript:void(0);" class="unlocked"></a>
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0);">Career Cluster</a>
+                                    <a href="javascript:void(0);">Grad Plan</a>
+                                </td>
+                                <td align="center">
+                                    <a href="javascript:void(0);" class="view"></a>
+                                    <a href="javascript:void(0);" class="edit" data-toggle="modal" data-target="#edit-student-details"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <label>
+                                        <input type="checkbox" name="confirm" checked="checked" value="yes" />
+                                    </label>
+                                </td>
+                                <td>12345</td>
+                                <td>Bastrop</td>
+                                <td>Betty</td>
+                                <td>demostudent</td>
+                                <td>Bastrop High School</td>
+                                <td>8th Grade</td>
+                                <td>
+                                    <ul>
+                                        <li class="incomplete">Incomplete</li>
+                                    </ul>
+                                </td>
+                                <td align="center">
+                                    <a href="javascript:void(0);" class="unlocked"></a>
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0);">Career Cluster</a>
+                                    <a href="javascript:void(0);">Grad Plan</a>
+                                </td>
+                                <td align="center">
+                                    <a href="javascript:void(0);" class="view"></a>
+                                    <a href="javascript:void(0);" class="edit" data-toggle="modal" data-target="#edit-student-details"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <label>
+                                        <input type="checkbox" name="confirm" value="yes" />
+                                    </label>
+                                </td>
+                                <td>12345</td>
+                                <td>Bastrop</td>
+                                <td>Betty</td>
+                                <td>demostudent</td>
+                                <td>Bastrop High School</td>
+                                <td>8th Grade</td>
+                                <td>
+                                    <ul>
+                                        <li class="incomplete">Incomplete</li>
+                                    </ul>
+                                </td>
+                                <td align="center">
+                                    <a href="javascript:void(0);" class="unlocked"></a>
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0);">Career Cluster</a>
+                                    <a href="javascript:void(0);">Grad Plan</a>
+                                </td>
+                                <td align="center">
+                                    <a href="javascript:void(0);" class="view"></a>
+                                    <a href="javascript:void(0);" class="edit" data-toggle="modal" data-target="#edit-student-details"></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                     <!-- Modal -->
-                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <ul class="nav nav-tabs" id="tab-01">
-                                <li class="active"><a href="#edit">Edit Student Details</a></li>
-                                <li><a href="#change">Change Password</a></li>
-                            </ul>
-                            <div class="tools"> <a href="javascript:;" class="collapse"></a> <a href="#grid-config" data-toggle="modal" class="config"></a> <a href="javascript:;" class="reload"></a> <a href="javascript:;" class="remove"></a> </div>
-                          </div>
-                          <div class="modal-body">
-                              <div class="tab-content">
-                                <div class="tab-pane active" id="edit">
-                                  <div class="row column-seperation">
-                                    <div class="col-md-12">
-                                        <label>Student ID</label>
-                                        <div class="input-holder required"><input type="text" name="id" required></div>
+                    <div class="modal fade" id="edit-student-details" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <ul class="nav nav-tabs" id="tab-01">
+                                        <li class="active"><a href="#edit">Edit Student Details</a></li>
+                                        <li><a href="#change">Change Password</a></li>
+                                    </ul>
+                                    <div class="tools">
+                                        <a href="javascript:;" class="collapse"></a>
+                                        <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                        <a href="javascript:;" class="reload"></a>
+                                        <a href="javascript:;" class="remove"></a>
                                     </div>
-                                    <div class="col-md-6">
-                                        <label>First Name</label>
-                                        <div class="input-holder required"><input type="text" name="first-name" required></div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label>Last Name</label>
-                                        <div class="input-holder required"><input type="text" name="last-name" required></div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label>Email</label>
-                                        <div class="input-holder"><input type="text" name="email"></div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label>Username</label>
-                                        <div class="input-holder"><input type="text" name="username"></div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label>School</label>
-                                        <div class="input-holder required"><input type="text" name="school" required></div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label>Grade</label>
-                                        <div class="input-holder required"><input type="text" name="grade" required></div>
-                                    </div>
-                                  </div>
                                 </div>
-                                <div class="tab-pane" id="change">
-                                  <div class="row">
-                                    <div class="col-md-12">
-                                        <label>Enter New Password</label>
-                                        <div class="input-holder required"><input type="text" name="id" required></div>
+                                <div class="modal-body">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="edit">
+                                            <div class="row column-seperation">
+                                                <div class="col-md-12">
+                                                    <label>Student ID</label>
+                                                    <div class="input-holder required">
+                                                        <input type="text" name="id" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label>First Name</label>
+                                                    <div class="input-holder required">
+                                                        <input type="text" name="first-name" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label>Last Name</label>
+                                                    <div class="input-holder required">
+                                                        <input type="text" name="last-name" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label>Email</label>
+                                                    <div class="input-holder">
+                                                        <input type="text" name="email">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label>Username</label>
+                                                    <div class="input-holder">
+                                                        <input type="text" name="username">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label>School</label>
+                                                    <div class="input-holder required">
+                                                        <input type="text" name="school" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label>Grade</label>
+                                                    <div class="input-holder required">
+                                                        <input type="text" name="grade" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="change">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <label>Enter New Password</label>
+                                                    <div class="input-holder required">
+                                                        <input type="text" name="id" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label>Confirm New Password</label>
+                                                    <div class="input-holder required">
+                                                        <input type="text" name="id" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-md-12">
-                                        <label>Confirm New Password</label>
-                                        <div class="input-holder required"><input type="text" name="id" required></div>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-reset" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Submit</button>
-                          </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-reset" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
                         </div>
-                      </div>
+                    </div>
+                    <div class="modal fade" id="create-student" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title">Add Student</h4>
+                                    <div class="tools">
+                                        <a href="javascript:;" class="collapse"></a>
+                                        <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                        <a href="javascript:;" class="reload"></a>
+                                        <a href="javascript:;" class="remove"></a>
+                                    </div>
+                                </div>
+                                <div class="modal-body clearfix">
+                                    <form>
+                                        <div class="row">
+                                            <div class="form-group col-md-12">
+                                                <label class="control-label">Student ID</label>
+                                                <div class="input-holder required">
+                                                    <input type="text" value="" placeholder="Student ID" name="UserKey" maxlength="50" id="UserKey" data-val-required="Student ID required" data-val="true" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="control-label">First Name</label>
+                                                <div class="input-holder required">
+                                                    <input type="text" value="" placeholder="First Name" name="FirstName" maxlength="30" id="FirstName" data-val-required="First Name required" data-val="true" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="control-label">Last Name</label>
+                                                <div class="input-holder required">
+                                                    <input type="text" value="" placeholder="Last Name" name="LastName" maxlength="30" id="LastName" data-val-required="Last Name required" data-val="true" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="control-label">Email</label>
+                                                <input type="text" value="" placeholder="Email" name="Email" maxlength="75" id="Email" class="form-control">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="control-label">Username</label>
+                                                <input type="text" value="" placeholder="Username" name="Username" maxlength="40" id="Username" data-val-required="Username required" data-val="true" class="form-control">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="control-label">Password</label>
+                                                <div class="input-holder required">
+                                                    <input type="password" placeholder="Password" name="Password" id="Password" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="control-label">Confirm Password</label>
+                                                <div class="input-holder required">
+                                                    <input type="password" placeholder="Confirm Password" name="ConfirmPassword" id="ConfirmPassword" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="control-label">School</label>
+                                                <div class="input-holder required">
+                                                    <select name="SchoolId" id="SchoolId" data-val-number="The field SchoolId must be a number." data-val="true" class="form-control">
+                                                        <option value="">Select School</option>
+                                                        <option value="2">Bastrop High School</option>
+                                                        <option value="1">Bastrop Middle School</option>
+                                                        <option value="4">Cedar Creek High School</option>
+                                                        <option value="3">Cedar Creek Middle School</option>
+                                                        <option value="5">Colorado River Collegiate Academy</option>
+                                                        <option value="268">Gateway DAEP</option>
+                                                        <option value="100">Genesis High School</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="control-label">Grade</label>
+                                                <div class="input-holder required">
+                                                    <select name="GradeId" id="GradeId" data-val-number="The field GradeId must be a number." data-val="true" class="form-control">
+                                                        <option value="">Select Grade</option>
+                                                        <option value="1">6th Grade</option>
+                                                        <option value="2">7th Grade</option>
+                                                        <option value="3">8th Grade</option>
+                                                        <option value="4">Freshman</option>
+                                                        <option value="5">Sophomore</option>
+                                                        <option value="6">Junior</option>
+                                                        <option value="7">Senior</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-reset" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <p class="pages">Showing 1 to 2 of 2 entries</p>
-                </div>
-                <div class="col-md-4 pull-right text-right">
-                    <nav>
-                        <ul class="pagination pagination-sm">
-                            <li class="disabled"><a href="javascript:void(0);" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-                            <li class="active"><a href="javascript:void(0);">1 <span class="sr-only">(current)</span></a></li>
-                            <li><a href="javascript:void(0);">2</a></li>
-                            <li class=""><a href="javascript:void(0);" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
-                        </ul>
-                    </nav>
-                </div>
             </div>
+            <div class="col-md-5">
+                <p class="pages">Showing 1 to 2 of 2 entries</p>
+            </div>
+            <div class="col-md-4 pull-right text-right">
+                <nav>
+                    <ul class="pagination pagination-sm">
+                        <li class="disabled"><a href="javascript:void(0);" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                        <li class="active"><a href="javascript:void(0);">1 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="javascript:void(0);">2</a></li>
+                        <li class=""><a href="javascript:void(0);" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
         </div>
     </section>
     <footer>

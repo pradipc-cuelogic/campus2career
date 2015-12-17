@@ -41,6 +41,8 @@ $(document).ready(function() {
             radioBtn.removeAttr('id');
         }
     });
+
+    customCheckbox();
 });
 
 
