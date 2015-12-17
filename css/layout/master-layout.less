@@ -136,6 +136,43 @@ a:visited {
 }
 
 // Checkbox and Radio button
+/* =================== Custom Checkbox =================== */
+
+.custom-checkbox {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    top: 3px;
+    background: url("../../images/checkbox.png") no-repeat;
+}
+
+.custom-checkbox:hover {
+    background: url("../../images/checkbox.png") no-repeat;
+}
+
+.custom-checkbox.selected {
+    background: url("../../images/checkbox-checked.png") no-repeat;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    outline: none;
+    opacity: 0;
+    /* CSS hacks for older browsers */
+    /*_noFocusLine: expression(this.hideFocus=true); 
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);*/
+    -khtml-opacity: 0;
+    -moz-opacity: 0;
+}
+
+
+/* =================== Custom Checkbox =================== */
 
 /* Base for label styling */
 

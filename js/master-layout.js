@@ -127,6 +127,9 @@ function customCheckbox(checkboxName){
         $(this).parent().toggleClass("selected");
     });
 }
+$(document).ready(function (){
+    customCheckbox("confirm");
+})
 
 function setLayout() {
     $('[data-toggle="tooltip"]').tooltip();
