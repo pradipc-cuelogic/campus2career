@@ -110,7 +110,7 @@
         </div>
     </nav>
     <div class="page-title-wrap">
-        <h2>Graduation Plan</h2>
+        <h2>Update Graduation Plan</h2>
         <div class="notification-wrap">
             <div class="notifications-slide">
                 <a class="bell-toggle" href="javascript:void(0);"></a>
@@ -143,15 +143,33 @@
             </div>
         </div>
     </div>
-    <section class="graduation-plan">
+    <section class="graduation-plan edit">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 col-sm-6">
-                    <h2>Program of Study: <span>AH Art</span></h2>
-                    <h2>Program of Study 2: <span>BI Business Mgmt</span></h2>
+                    <h2>Program of Study:
+                        <select name="program-of-study">
+                            <option selected="selected">AH Arts</option>
+                            <option>AH Language Arts</option>
+                            <option>BI Architecture and Construction Technology</option>
+                        </select>
+                    </h2>
+                    <h2>Program of Study 2:
+                        <select name="program-of-study">
+                            <option>BI Business Mgmt</option>
+                            <option selected="selected">MD Advanced Placement</option>
+                            <option>STEM Engineering Robotics</option>
+                        </select>
+                    </h2>
                 </div>
                 <div class="col-md-5 col-sm-4">
-                    <h2>Graduate Year: <span>2015</span></h2>
+                    <h2>Graduate Year:
+                        <select name="graduation-year">
+                            <option selected="selected">2015</option>
+                            <option>2016</option>
+                            <option>2017</option>
+                        </select>
+                    </h2>
                 </div>
                 <div class="col-md-2 col-sm-2 text-right">
                     <a href="javascript:void(0);" class="print" title="Print"></a>
@@ -161,7 +179,7 @@
             <div class="clearfix">&nbsp;</div>
             <div class="row">
                 <div class="col-md-5">
-                    <div class="grybg">
+                    <div class="grybg overlay-edit">
                         <h4>Graduation Plan</h4>
                         <table class="table no-more-tables">
                             <tr>
@@ -198,16 +216,29 @@
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <div class="grybg">
+                    <div class="grybg overlay-edit top90">
                         <div class="head">
                             <div class="row">
                                 <div class="col-md-6 col-sm-6">
                                     <h4>Post-Secondary Selection</h4>
-                                    <h4><span>South Texas College</span></h4>
+                                    <!-- <h4><span>South Texas College</span></h4> -->
+                                    <h4>
+                                      <select name="post-secondary">
+                                        <option>Austin Community College</option>
+                                        <option selected="selected">South Texas College</option>
+                                        <option>Stanford University</option>
+                                      </select>
+                                    </h4>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
                                     <h4>Department</h4>
-                                    <h4><a href="javascript:void(0);">Arts and Sciences</a></h4>
+                                    <h4>
+                                      <select name="post-secondary">
+                                        <option selected="selected">Arts and Science</option>
+                                        <option>Mechanical</option>
+                                        <option>Health Care and Services</option>
+                                      </select>
+                                    </h4>
                                 </div>
                             </div>
                         </div>
@@ -237,7 +268,13 @@
                             <br> Art and Humanities
                         </div>
                         <div class="divider"></div>
-                        <h5>Achievement Label: <span>Distinguished</span></h5>
+                        <h5>Achievement Label:
+                            <select name="achievement">
+                                <option>Select Achievement</option>
+                                <option selected="selected">Distinguished</option>
+                                <option>Foundation</option>
+                            </select>
+                        </h5>
                     </div>
                 </div>
             </div>
@@ -269,7 +306,7 @@
             </div>
         </div>
     </section>
-    <section class="schedule">
+    <section class="schedule edit">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -277,6 +314,7 @@
                         <a href="javascript:void(0);" class="btn-right">Complete Plan</a>
                         <a href="javascript:void(0);" class="btn-right">Update Plan</a>
                     </h3>
+                    <div class="table-over">
                     <table class="table datatable">
                         <tr>
                             <th width="25%" class="disabled">9th Grade</th>
@@ -285,36 +323,157 @@
                             <th width="25%">12th Grade</th>
                         </tr>
                         <tr>
-                            <td class="disabled">English I PAP</td>
-                            <td>English II</td>
-                            <td>English III</td>
-                            <td>Debate III</td>
+                            <td class="disabled overlay-edit">
+                                <select name="post-secondary">
+                                    <option selected="selected">English I PAP</option>
+                                    <option>English III</option>
+                                    <option>Debate III</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="post-secondary">
+                                    <option selected="selected">English II</option>
+                                    <option>English III</option>
+                                    <option>Debate III</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="post-secondary">
+                                    <option>English II</option>
+                                    <option selected="selected">English III</option>
+                                    <option>Debate III</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="post-secondary">
+                                    <option>English II</option>
+                                    <option>English III</option>
+                                    <option selected="selected">Debate III</option>
+                                </select>
+                            </td>
                         </tr>
                         <tr>
-                            <td class="disabled">Algebra I</td>
-                            <td>Geometry</td>
-                            <td>Algebra II</td>
-                            <td>Calculus AP AB</td>
+                            <td class="disabled overlay-edit">
+                                <select name="post-secondary">
+                                    <option selected="selected">Algebra I</option>
+                                    <option>English III</option>
+                                    <option>Debate III</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="post-secondary">
+                                    <option selected="selected">Geometry</option>
+                                    <option>Algebra II</option>
+                                    <option>Calculus AP AB</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="post-secondary">
+                                    <option>Geometry</option>
+                                    <option selected="selected">Algebra II</option>
+                                    <option>Calculus AP AB</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="post-secondary">
+                                    <option>Geometry</option>
+                                    <option>Algebra II</option>
+                                    <option selected="selected">Calculus AP AB</option>
+                                </select>
+                            </td>
                         </tr>
                         <tr>
-                            <td class="disabled">Research Methods in Social Studies 1</td>
-                            <td>World History PAP</td>
-                            <td>n/a</td>
-                            <td>n/a</td>
+                            <td class="disabled overlay-edit">
+                                <select name="post-secondary">
+                                    <option selected="selected">Research Methods in Social Studies 1</option>
+                                    <option>English III</option>
+                                    <option>Debate III</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="post-secondary">
+                                    <option selected="selected">World History PAP</option>
+                                    <option>Research Methods in Social Studies 1</option>
+                                    <option>n/a</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="post-secondary">
+                                    <option>World History PAP</option>
+                                    <option selected="selected">Research Methods in Social Studies 1</option>
+                                    <option>n/a</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="post-secondary">
+                                    <option>World History PAP</option>
+                                    <option>Research Methods in Social Studies 1</option>
+                                    <option selected="selected">n/a</option>
+                                </select>
+                            </td>
                         </tr>
                         <tr>
-                            <td class="disabled">Biology PAP</td>
-                            <td>n/a</td>
-                            <td>Chemistry AP</td>
-                            <td>n/a</td>
+                            <td class="disabled overlay-edit">
+                                <select name="post-secondary">
+                                    <option selected="selected">Biology PAP</option>
+                                    <option>English III</option>
+                                    <option>Debate III</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="post-secondary">
+                                    <option>World History PAP</option>
+                                    <option>Chemistry AP</option>
+                                    <option selected="selected">n/a</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="post-secondary">
+                                    <option>World History PAP</option>
+                                    <option selected="selected">Chemistry AP</option>
+                                    <option>n/a</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="post-secondary">
+                                    <option>World History PAP</option>
+                                    <option>Chemistry AP</option>
+                                    <option selected="selected">n/a</option>
+                                </select>
+                            </td>
                         </tr>
                         <tr>
-                            <td class="disabled">Agricultural Facilities and Design & Fabrication</td>
-                            <td>n/a</td>
-                            <td>n/a</td>
-                            <td>n/a</td>
+                            <td class="disabled overlay-edit">
+                                <select name="post-secondary">
+                                    <option selected="selected">Agricultural Facilities and Design & Fabrication</option>
+                                    <option>English III</option>
+                                    <option>Debate III</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="post-secondary">
+                                    <option>World History PAP</option>
+                                    <option>Chemistry AP</option>
+                                    <option selected="selected">n/a</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="post-secondary">
+                                    <option>World History PAP</option>
+                                    <option>Chemistry AP</option>
+                                    <option selected="selected">n/a</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="post-secondary">
+                                    <option>World History PAP</option>
+                                    <option>Chemistry AP</option>
+                                    <option selected="selected">n/a</option>
+                                </select>
+                            </td>
                         </tr>
                     </table>
+                    </div>
                 </div>
             </div>
     </section>
