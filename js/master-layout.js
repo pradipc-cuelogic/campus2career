@@ -41,6 +41,8 @@ $(document).ready(function() {
             radioBtn.removeAttr('id');
         }
     });
+
+    customCheckbox();
 });
 
 
@@ -125,6 +127,9 @@ function customCheckbox(checkboxName){
         $(this).parent().toggleClass("selected");
     });
 }
+$(document).ready(function (){
+    customCheckbox("confirm");
+})
 
 function setLayout() {
     $('[data-toggle="tooltip"]').tooltip();

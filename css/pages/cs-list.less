@@ -1,241 +1,252 @@
-.middle form .form-field{
+.middle form .form-field {
     margin: 0 0 0 0px;
-    label{
+    label {
         display: block;
         font-size: 15px;
         font-weight: 300;
-        color:#5e5e5e;
+        color: #5e5e5e;
         line-height: 24px;
     }
 }
-form .form-field .selectbox, .search-box .selectbox{
-    width:90%;
-    border:#e5e9ec 1px solid;
-    border-radius:8px;
-    padding:5px 8px;
-    box-shadow:0 1px 1px rgba(0,0,0,0.10) inset;
-    select{
-        width: 100%;
-        border:#FFF 1px solid;
-    }
-    input[type="text"]{
-        border:none;
-        padding: 0;
-        width: 100%;
-    }
-}
-select:focus, input:focus{
-    outline: none;
-}
 
-.add-student{
-    font-size: 13px;
-    font-weight: normal;
-    color: #FFF;
-    line-height: 20px;
-    padding: 7px 20px;
-    border-radius: 20px;
-    background: #305a83;
-}
-.add-student:before{
+
+.add-student:before {
     content: "+";
-    font-weight:600;
+    font-weight: 600;
     color: #FFF;
     margin-right: 10px;
 }
-.add-student:hover, .add-student:focus{
-    color:#FFF;
+
+.add-student:hover,
+.add-student:focus {
+    color: #FFF;
 }
-.search-box{
-    label{
-        font-weight: normal;
-        margin-right: 8px;
-    }
-    input{
-        background:url(../../images/pgp/search-icon.png) 96% center no-repeat #FFF;
-        background-size: 16px auto;
-        border:#e5e9ec 1px solid;
-        border-radius:8px;
-        padding:5px 28px 5px 8px;
-        box-shadow:0 1px 1px rgba(0,0,0,0.10) inset;
-    }
-    .selectbox{
-        display: inline-block;
-        width: auto;
+
+.search-records-wrap {
+    float: right;
+    .search-box {
+        float: right;
+        padding: 0 15px;
+        label {
+            font-weight: normal;
+            margin-right: 8px;
+        }
+        input {
+            background: url(../../images/pgp/search-icon.png) 96% center no-repeat #FFF;
+            background-size: 16px auto;
+            border: #e5e9ec 1px solid;
+            border-radius: 8px;
+            padding: 5px 28px 5px 8px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10) inset;
+        }
+        .selectbox {
+            display: inline-block;
+            width: auto;
+        }
     }
 }
 
-/* =================== Custom Checkbox =================== */
-    .custom-checkbox{
-        width: 17px;
-        height: 17px;
-        display: inline-block;
-        position: relative;
-        z-index: 1;
-        top: 3px;
-        background: url("../../images/checkbox.png") no-repeat;
-    }
-    .custom-checkbox:hover{
-        background: url("../../images/checkbox.png") no-repeat;
-    }
-    .custom-checkbox.selected{
-        background: url("../../images/checkbox-checked.png") no-repeat;
-    }
-    .custom-checkbox input[type="checkbox"]{
-        margin: 0;
-        position: absolute;
-        z-index: 2;            
-        cursor: pointer;
-        outline: none;
-        opacity: 0;
-        /* CSS hacks for older browsers */
-        /*_noFocusLine: expression(this.hideFocus=true); 
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-        filter: alpha(opacity=0);*/
-        -khtml-opacity: 0;
-        -moz-opacity: 0;
-    }
-/* =================== Custom Checkbox =================== */
-.table-over{
-    overflow:auto;
+.table-over {
+    overflow: auto;
 }
-table.datatable{
-    ul{
+
+table.datatable {
+    ul {
         margin: 0;
         padding: 0 0 0 14px;
-        .new{color:#6db5ff;}
-        .incomplete{color:#ff8372;}
-        .completed{color:#72c767;}
-        .updated{color:#c0a745;}
+        .new {
+            color: #6db5ff;
+        }
+        .incomplete {
+            color: #ff8372;
+        }
+        .completed {
+            color: #72c767;
+        }
+        .updated {
+            color: #c0a745;
+        }
     }
-    .unlocked, .locked{
+    .unlocked,
+    .locked {
         width: 14px;
         height: 20px;
-        display:inline-block;
+        display: inline-block;
         background: url(../../images/lock-sprite.png) 0 0 no-repeat;
         background-size: 100% auto;
     }
-    .locked{
+    .locked {
         background-position: left bottom;
     }
-    .view, .edit{
-        width:18px;
-        height:18px;
+    .view,
+    .edit {
+        width: 18px;
+        height: 18px;
         display: inline-block;
         background: url(../../images/view-icon.png) 0 0 no-repeat;
         background-size: 100% auto;
     }
-    .edit{
-        margin-left:10px;
+    .edit {
+        margin-left: 10px;
         background: url(../../images/edit-icon.png) 0 0 no-repeat;
         background-size: 100% auto;
     }
 }
-.modal{
-    .modal-header{
-        border-bottom:none;
-        ul.nav-tabs{
-            padding-left:10px;
-            li{
-                font-size: 18px;
+
+#edit-student-details {
+    .modal-header {
+        padding: 0 15px;
+        ul.nav-tabs {
+            padding: 5px 0 15px 0;
+            border: 0;
+            position: relative;
+            bottom: -15px;
+            li {
+                font-size: 16px;
                 font-weight: 300;
-                a{
+                a {
                     color: #474b4f;
                 }
             }
-            li.active a{
+            li.active a {
                 font-weight: normal;
                 color: #000;
             }
         }
     }
-    .modal-body{
-        label{
-            font-size:16px;
-            font-weight:300;
-            color:#474b4f;
-            margin-bottom:10px;
-        }
-        .input-holder{
-            margin-bottom: 15px;
-            position: relative;
-            border-radius:3px;
-            overflow: hidden;
-            input[type="text"]{
-                border:#dbdbdb 1px solid;
-                border-radius:3px;
-                height:36px;
-                padding:5px 20px 5px 10px;
-                width:100%;
-            }
-            &.required:after{
-                width: 17px;
-                height: 17px;
-                content: "*";
-                color:#FFF;
-                line-height: 15px;
-                padding:0 0 7px 8px;
-                margin:1px 1px 0 0;
-                position: absolute;
-                top: 0;
-                right: 0;
-                background: url(../../images/req-bg.png) no-repeat;
-            }
-        }
-    }
-    .modal-footer{
-        padding:15px 10px;
-        margin:0 15px;
-        .btn{
-            border-radius: 50px;
-            padding:6px 25px;
-            font-size:13px;
-            font-weight: normal;
-            color: #373737;
-            &.btn-reset{
-                background-color:#dcdee1;
-            }
-            &.btn-primary{
-                background-color:#305a83;
-                color:#FFF;
-            }
-        }
-    }
 }
-.middle{
-    p.pages{
+
+.middle {
+    p.pages {
         display: inline-block;
-        font-size:13px;
+        font-size: 13px;
         font-weight: normal;
         line-height: 24px;
-        color:#636363;
-        padding:0 15px;
-        margin:0;
-        border:#DDD 1px solid;
-        border-radius:15px;
+        color: #636363;
+        padding: 0 15px;
+        margin: 0;
+        border: #DDD 1px solid;
+        border-radius: 15px;
     }
-    .pagination{
-        margin:0 0 20px 0;
-        &.pagination-sm > li > a, &.pagination-sm > li > span{
-            padding:3px 8px;
-            color:#3d4c5b;
+    .pagination {
+        margin: 0 0 20px 0;
+        &.pagination-sm > li > a,
+        &.pagination-sm > li > span {
+            padding: 3px 8px;
+            color: #3d4c5b;
             border-right: none;
             border-left: none;
         }
-        &.pagination-sm > li:first-child > a, &.pagination-sm > li:last-child > a{
-            border:#DDD 1px solid;
+        &.pagination-sm > li:first-child > a,
+        &.pagination-sm > li:last-child > a {
+            border: #DDD 1px solid;
         }
-        &.pagination-sm > li:first-child > a{
-            border-radius:20px 0 0 20px;
+        &.pagination-sm > li:first-child > a {
+            border-radius: 20px 0 0 20px;
         }
-        &.pagination-sm > li:last-child > a{
-            border-radius:0 20px 20px 0;
+        &.pagination-sm > li:last-child > a {
+            border-radius: 0 20px 20px 0;
         }
-        > .active > a, > .active > span, > .active > a:hover, > .active > span:hover, > .active > a:focus, > .active > span:focus{
+        > .active > a,
+        > .active > span,
+        > .active > a:hover,
+        > .active > span:hover,
+        > .active > a:focus,
+        > .active > span:focus {
             background-color: transparent;
-            color:#3d4c5b;
+            color: #3d4c5b;
             font-weight: 600;
-            border-color:#DDD;
+            border-color: #DDD;
+        }
+    }
+}
+
+.secondary {
+    p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    dl dt {
+        float: left;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    dl dd {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: normal;
+        padding-left: 200px;
+    }
+    .tags {
+        padding-top: 10px;
+        span {
+            padding-left: 25px;
+            margin-left: 20px;
+            height: 20px;
+            line-height: 20px;
+            display: inline-block;
+            position: relative;
+        }
+        span:before {
+            content: " ";
+            height: 14px;
+            width: 14px;
+            border-radius: 10px;
+            background-color: #ff0000;
+            position: absolute;
+            left: 5px;
+            top: 3px;
+        }
+        span.dual:before {
+            background-color: #f77474;
+        }
+        span.ap:before {
+            background-color: #92dc61;
+        }
+        span.ib:before {
+            background-color: #f7cb74;
+        }
+        span.articulated:before {
+            background-color: #b296eb;
+        }
+    }
+    ul.nav-tabs {
+        padding-left: 15px;
+        > li > a {
+            font-size: 16px;
+            padding: 10px 30px;
+        }
+    }
+    .table {
+        margin-top: 20px;
+    }
+}
+
+.datatable {
+    > tbody > tr {
+        > td {
+            position: relative;
+        }
+        > td:after {
+            content: "";
+            height: 2px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0 20px 0 0;
+        }
+        > td.dual:after {
+            background-color: #f77474;
+        }
+        > td.ap:after {
+            background-color: #92dc61;
+        }
+        > td.ib:after {
+            background-color: #f7cb74;
+        }
+        > td.articulated:after {
+            background-color: #b296eb;
         }
     }
 }
