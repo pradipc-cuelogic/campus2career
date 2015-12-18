@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>Campus to Career</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/bootstrap/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/layout/master-layout.less" rel="stylesheet/less">
+    <script src="js/less.min.js"></script>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h1 class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Campus2Careers"><a href="javascript:void(0);"><img src="images/c2c-logo.png" alt="Campus2Careers" title=""></a></h1>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="top-primary-nav reset-ul">
+                    <li><a href="javascript:void(0);" class="topicon" data-toggle="tooltip" data-placement="bottom" data-title="Print"><span class="print">Print</span></a></li>
+                    <li><a href="javascript:void(0);" class="topicon" data-toggle="tooltip" data-placement="bottom" data-title="Support"><span class="support">Support</span></a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="profile hasDropeown" data-toggle="dropdown">
+                            <img src="images/header/profile-pic.jpg" class="top-pic">
+                            <p class="userName">
+                                <span>Darsh Smith</span>
+                                <span>School Name</span></p>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0);">View</a></li>
+                            <li><a href="javascript:void(0);">Edit</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0);" class="logout">Logout</a></li>
+                </ul>
+            </div>
+            <div class="navbar">
+                <ul class="nav mainmenu">
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Home" class="icon home"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Dashboard" class="icon dashboard"></a>
+                    </li>
+                    <li class="dropdown" data-toggle="tooltip" data-placement="top" data-title="Profile">
+                        <a href="javascript:void(0);" data-toggle="dropdown" class="icon profile hasDropdown"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0);">Edit</a></li>
+                            <li><a href="javascript:void(0);">View</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Career Discovery" class="icon discovery"></a>
+                    </li>
+                    <li class="dropdown" data-toggle="tooltip" data-placement="top" data-title="Opportunities">
+                        <a href="javascript:void(0);" data-toggle="dropdown" class="icon opportunities hasDropdown"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0);">BISD Jobs</a></li>
+                            <li><a href="javascript:void(0);">All Jobs</a></li>
+                            <li><a href="javascript:void(0);">Mentors</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Graduation Plan" class="icon plan"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Calender" class="icon calender"></a>
+                    </li>
+                    <li class="dropdown" data-toggle="tooltip" data-placement="top" data-title="Messages">
+                        <a href="javascript:void(0);" data-toggle="dropdown" class="icon message hasDropdown"><span class="badge">19</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0);">Inbox<span class="badge">19</span></a></li>
+                            <li><a href="javascript:void(0);">Sent</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Folders" class="icon folder"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Video Wall" class="icon video"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Settings" class="icon setting"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="page-title-wrap">
+        <h2>Settings</h2>
+        <div class="notification-wrap">
+            <div class="notifications-slide">
+                <a class="bell-toggle" href="javascript:void(0);"></a>
+                <div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
+                    <ol class="carousel-indicators">
+                        <li class="active" data-slide-to="0" data-target="#carousel-example-generic"></li>
+                        <li data-slide-to="1" data-target="#carousel-example-generic" class=""></li>
+                        <li data-slide-to="2" data-target="#carousel-example-generic" class=""></li>
+                        <li data-slide-to="3" data-target="#carousel-example-generic" class=""></li>
+                    </ol>
+                    <div role="listbox" class="carousel-inner">
+                        <div class="item active">New announcement
+                            <br> Lorem ipsum dolor sit amet, consectetur ...
+                            <br>
+                            <a href="javascript:void(0);">More details...</a></div>
+                        <div class="item">New announcement
+                            <br> Lorem ipsum dolor sit amet, consectetur ...
+                            <br>
+                            <a href="javascript:void(0);">More details...</a></div>
+                        <div class="item">New announcement
+                            <br> Lorem ipsum dolor sit amet, consectetur ...
+                            <br>
+                            <a href="javascript:void(0);">More details...</a></div>
+                        <div class="item">New announcement
+                            <br> Lorem ipsum dolor sit amet, consectetur ...
+                            <br>
+                            <a href="javascript:void(0);">More details...</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="middle">
+        <div class="container">
+            <div class="row">
+                <form>
+                    <div class="col-md-6 col-sm-6">
+                        <h4>Primary Details <a href="javascript:void(0);" class="pull-right edit"></a></h4>
+                        <div class="form-field" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit to Update">
+                            <label>Username</label>
+                            <div class="input-holder">
+                                <input type="text" name="username" class="form-control" value="demostudent" disabled="disabled">
+                            </div>
+                        </div>
+                        <div class="form-field" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit to Update">
+                            <label>Email ID</label>
+                            <div class="input-holder">
+                                <input type="email" name="email-id" class="form-control" value="abc@demo.com" disabled="disabled">
+                            </div>
+                        </div>
+                        <div class="form-field" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit to Update">
+                            <label>Phone</label>
+                            <div class="input-holder">
+                                <input type="tel" name="phone" class="form-control" placeholder="e.g. +1 430 000 0000">
+                            </div>
+                        </div>
+                        <div class="form-field pull-right">
+                            <div class="input-holder">
+                                <input type="submit" name="submit" class="btn btn-primary" value="Submit" disabled="disabled">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <h4>Change Password</h4>
+                        <div class="form-field">
+                            <label>Old Password</label>
+                            <div class="input-holder">
+                                <input type="password" name="old-password" class="form-control" value="oldpassword" disabled="disabled">
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label>New Password</label>
+                            <div class="input-holder">
+                                <input type="password" name="new-password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label>Confirm Password</label>
+                            <div class="input-holder">
+                                <input type="password" name="new-password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-field pull-right">
+                            <div class="input-holder">
+                                <input type="submit" name="submit" class="btn btn-primary" value="Update Password" disabled="disabled">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <a href="javascript:void(0);" class="add-student btn btn-primary" data-target="#add-parent" data-toggle="modal">Add Parent</a>
+                </div>
+            </div>
+            <div class="clearfix">&nbsp;</div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-over">
+                        <table class="table datatable">
+                            <tr>
+                                <th width="6%">Edit</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0);" class="edit" data-toggle="modal" data-target="#add-parent"></a></td>
+                                <td>Bastrop</td>
+                                <td>Betty</td>
+                                <td>bastrop.betty@demodomain.com</td>
+                                <td>(915) 346-5672</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="edit-student-details" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <ul class="nav nav-tabs" id="tab-01">
+                                        <li class="active"><a href="#edit">Edit Student Details</a></li>
+                                        <li><a href="#change">Change Password</a></li>
+                                    </ul>
+                                    <div class="tools">
+                                        <a href="javascript:;" class="collapse"></a>
+                                        <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                        <a href="javascript:;" class="reload"></a>
+                                        <a href="javascript:;" class="remove"></a>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="edit">
+                                            <div class="row column-seperation">
+                                                <div class="col-md-12">
+                                                    <label>Student ID</label>
+                                                    <div class="input-holder required">
+                                                        <input type="text" name="id" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label>First Name</label>
+                                                    <div class="input-holder required">
+                                                        <input type="text" name="first-name" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label>Last Name</label>
+                                                    <div class="input-holder required">
+                                                        <input type="text" name="last-name" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label>Email</label>
+                                                    <div class="input-holder">
+                                                        <input type="text" name="email">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label>Username</label>
+                                                    <div class="input-holder">
+                                                        <input type="text" name="username">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label>School</label>
+                                                    <div class="input-holder required">
+                                                        <input type="text" name="school" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label>Grade</label>
+                                                    <div class="input-holder required">
+                                                        <input type="text" name="grade" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="change">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <label>Enter New Password</label>
+                                                    <div class="input-holder required">
+                                                        <input type="text" name="id" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label>Confirm New Password</label>
+                                                    <div class="input-holder required">
+                                                        <input type="text" name="id" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-reset" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="add-parent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title">Add / Edit Parent</h4>
+                                    <div class="tools">
+                                        <a href="javascript:;" class="collapse"></a>
+                                        <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                        <a href="javascript:;" class="reload"></a>
+                                        <a href="javascript:;" class="remove"></a>
+                                    </div>
+                                </div>
+                                <div class="modal-body clearfix">
+                                    <form>
+                                        <div class="row">
+                                            <div class="form-group col-md-6">
+                                                <label class="control-label">First Name</label>
+                                                <div class="input-holder required">
+                                                    <input type="text" value="" placeholder="First Name" name="FirstName" maxlength="30" id="FirstName" data-val-required="First Name required" data-val="true" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="control-label">Last Name</label>
+                                                <div class="input-holder required">
+                                                    <input type="text" value="" placeholder="Last Name" name="LastName" maxlength="30" id="LastName" data-val-required="Last Name required" data-val="true" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="control-label">Email</label>
+                                                <div class="input-holder required">
+                                                    <input type="email" value="" placeholder="Email" name="Email" maxlength="75" id="Email" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="control-label">Phone</label>
+                                                <div class="input-holder">
+                                                    <input type="tel" value="" placeholder="Phone" name="phone" maxlength="12" id="phone" data-val-required="Phone required" data-val="true" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="control-label">Organization Name</label>
+                                                <div class="input-holder">
+                                                    <input type="text" placeholder="Organization Name" name="organization" id="Organization" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="control-label">Occupation Title</label>
+                                                <div class="input-holder">
+                                                    <input type="text" placeholder="Occupation" name="Occupation" id="Occupation" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="control-label">Education Level</label>
+                                                <div class="input-holder">
+                                                    <select name="education" id="education" data-val-number="The field Education must be a number." data-val="true" class="form-control">
+                                                        <option value="">Select Degree Type</option>
+                                                        <option value="2">Associates</option>
+                                                        <option value="1">Bachelors</option>
+                                                        <option value="4">Certification</option>
+                                                        <option value="3">Doctorate</option>
+                                                        <option value="5">High School / GED</option>
+                                                        <option value="268">Masters</option>
+                                                        <option value="100">Vocational</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <label class="control-label">Industries</label>
+                                                <div class="input-holder">
+                                                    <textarea name="Industries">&nbsp;</textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-reset" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 copyright">&copy; SURESCORE INC</div>
+            </div>
+        </div>
+    </footer>
+    <span class='scrollup'><img src="images/top.png" alt="scroll to top"></span>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery-ui-1.10.1.custom.min.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/master-layout.js"></script>
+    <script src="js/tabs_accordian.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>

@@ -339,7 +339,7 @@ footer {
     }
 }
 
-// Button Classes
+/* Button Classes */
 .btn {
     border-radius: 100px;
     color: #373737;
@@ -358,7 +358,7 @@ footer {
     }
 }
 
-// Modal Classes
+/* Modal Classes */
 .modal {
     .modal-header {
         ul.nav-tabs {
@@ -408,18 +408,21 @@ footer {
     }
 }
 
-// Form Classes
+/* Form Classes */
 .input-holder {
-    margin-bottom: 15px;
+    margin-bottom:0px;
     position: relative;
     border-radius: 3px;
     overflow: hidden;
-    input[type="text"] {
+    input[type="text"], textarea{
         border: #dbdbdb 1px solid;
         border-radius: 3px;
         height: 36px;
         padding: 5px 20px 5px 10px;
         width: 100%;
+    }
+    textarea{
+        height:70px;
     }
     &.required:after {
         color: #fff;
@@ -438,6 +441,21 @@ footer {
         background: url(../../images/req-bg.png) no-repeat;
     }
 }
+
+.view,
+.edit {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background: url(../../images/view-icon.png) 0 0 no-repeat;
+    background-size: 100% auto;
+}
+.edit {
+    margin-left: 10px;
+    background: url(../../images/edit-icon.png) 0 0 no-repeat;
+    background-size: 100% auto;
+}
+
 
 @import url('../pages/before-login.less');
 @import url('theme.less');
