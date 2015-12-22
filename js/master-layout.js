@@ -19,6 +19,18 @@ $(document).ready(function() {
         interval: 5000
     });
 
+    $('table tr td input[type="checkbox"]').click(function(){
+        $(this).parent().parent().parent().parent().find("a").toggleClass("show");
+    })
+    
+//    $('table tr td input[type="checkbox"]').click(function(){
+//        if ($(this).attr("checked")){
+//            $(.parent().parent().parent().parent().find("a").toggleClass("show"));
+//            return;
+//        }
+//        $(.parent().parent().parent().parent().find("a").toggleClass(""));
+//    })
+    
     //________________________________BEGIN Slimscroller ________________________________       
     $('.scroller').each(function() {
         $(this).slimScroll({
