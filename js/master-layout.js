@@ -19,17 +19,14 @@ $(document).ready(function() {
         interval: 5000
     });
 
-    $('table tr td input[type="checkbox"]').click(function(){
-        $(this).parent().parent().parent().parent().find("a").toggleClass("show");
-    })
-    
-//    $('table tr td input[type="checkbox"]').click(function(){
-//        if ($(this).attr("checked")){
-//            $(.parent().parent().parent().parent().find("a").toggleClass("show"));
-//            return;
-//        }
-//        $(.parent().parent().parent().parent().find("a").toggleClass(""));
-//    })
+    //________________________________ Inbox Delete Icon ________________________________
+    $('table tr td input[type="checkbox"]').change(function(){
+    if(this.checked)
+    $(this).parent().parent().parent().parent().find("a").addClass("show");
+    else
+    $(this).parent().parent().parent().parent().find("a").removeClass("show");
+
+    });
     
     //________________________________BEGIN Slimscroller ________________________________       
     $('.scroller').each(function() {
