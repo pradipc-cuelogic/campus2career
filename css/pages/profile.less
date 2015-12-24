@@ -1,0 +1,186 @@
+.profilepic-upload{
+    width: 126px;
+    max-width: 126px;
+    padding:30px 0 12px;
+    border-radius: 0 0 100px 100px;
+    text-align: center;
+    position: absolute;
+    top: 2px;
+    left: 32px;
+    background: url(../../images/edit-profile/updatepic-btn-bg.png) center bottom repeat-x;
+    .edit-photo{
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 16px;
+        color: #FFF;
+        display: inline-block;
+        padding: 2px 0 0 23px;
+        background: url(../../images/edit-profile/updatepic-btn.png) center bottom no-repeat;
+    }
+    input.upload{
+        height: 20px;
+        font-size:5px;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom:12px;
+        right:0;
+        opacity: 0;
+        cursor: pointer;
+    }
+}
+.fileuploader{
+    display: inline-block;
+    margin:20px 0 20px 5px;
+    padding:0 10px 0 0;
+    height:30px;
+    font-size: 12px;
+    line-height:24px;
+    font-weight: normal;
+    text-shadow:none;
+    background-color:#141414;
+    border-radius: 15px;
+    border:#141414 3px solid;
+    overflow: hidden;
+    .uploader{
+        position: relative;
+        display: inline;
+        span.upload-video, span.upload-resume{
+            display: inline-block;
+            padding: 0 0 0 30px;
+            background: url(../../images/edit-profile/uploader-icon-sprite.png) 0 0 no-repeat;
+            background-size: 24px auto;
+        }
+        span.upload-resume{
+            background-position: 4px bottom;
+        }
+        input.upload{
+            height: 16px;
+            font-size: 9px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            opacity:0;
+            cursor: pointer;
+        }
+    }
+    a{
+        color: #2fe4ff;
+        text-decoration:none;
+    }
+}
+.student-profile{
+    .nav-tabs > li:after{
+        content:"";
+        position: absolute;
+        right: 5px;
+        top: 19px;
+        width: 11px;
+        height: 19px;
+        background: url(../../images/edit-profile/tab-arrow.png) 0 0 no-repeat;
+        background-size: 100% auto;
+    }
+    .nav-tabs > li:last-child:after{
+        background: none;
+    }
+    .nav-tabs > li > a{
+        font-size: 18px;
+        font-weight: 300;
+        color: #474b4f;
+        padding: 15px 20px;
+        margin: 0 36px 0 16px;
+        border:rgba(218,218,218,0.90) 1px solid;
+        border-bottom-color: transparent;
+    }
+    .nav-tabs > li:last-child > a{
+        margin: 0 0 0 16px;
+    }
+    .nav > li > a:hover, .nav > li > a:focus{
+        background-color:#FFF;
+        color: #000;
+    }
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+        color: #000;
+        font-weight: normal;
+    }
+    .tab-content{
+        padding: 25px;
+        label{
+            font-size: 16px;
+            font-weight: 300;
+            color: #474b4f;
+        }
+        a.info-tooltip{
+            padding:0 7px;
+            background:#154e77;
+            color:#FFF;
+            font-size:13px;
+            font-weight:bold;
+            color:#FFF;
+            border-radius:8px;
+        }
+        .tagarea{
+            min-height: 36px;
+            padding: 4px 6px;
+            border:#dbdbdb 1px solid;
+            border-radius: 3px;
+        }
+        .experience{
+            margin-bottom:20px;
+            border-bottom:#acacac 1px solid;
+            h3{
+                margin: 0 0 10px 0;
+                padding-bottom: 10px;
+                border-bottom:#e9e9e9 1px solid;
+                font-size: 16px;
+                font-weight: 600;
+                color: #333;
+                height:46px;
+                span.number{
+                    width: 36px;
+                    height: 36px;
+                    background:#d9d9d9;
+                    border-radius:20px;
+                    margin-right: 11px;
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 36px;
+                }
+                span.date{
+                    float: right;
+                    width: 70px;
+                    text-align:center;
+                    font-size: 13px;
+                    line-height: 18px;
+                    color:#8e8e8e;
+                    font-weight: normal;
+                }
+            }
+            .experience-details{
+                padding: 0 0 0 50px;
+                .rating{
+                    height:22px;
+                    .star{
+                        height: 22px;
+                        width: 22px;
+                        display: inline-block;
+                        background-size: 100% auto;
+                        &.empty{
+                            background: url(../../images/edit-profile/blank-star.png) 0 0 no-repeat;
+                        }
+                    }
+                }
+                label{
+                    font-weight: 600;
+                    color: #333;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 15px;
+                    font-weight: normal;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

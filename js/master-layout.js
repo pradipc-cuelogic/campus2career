@@ -21,11 +21,10 @@ $(document).ready(function() {
 
     //________________________________ Inbox Delete Icon ________________________________
     $('table tr td input[type="checkbox"]').change(function(){
-    if(this.checked)
-    $(this).parent().parent().parent().parent().find("a").addClass("show");
-    else
-    $(this).parent().parent().parent().parent().find("a").removeClass("show");
-
+        if(this.checked)
+        $(this).parent().parent().parent().parent().find("a").addClass("show");
+        else
+        $(this).parent().parent().parent().parent().find("a").removeClass("show");
     });
     
     //________________________________BEGIN Slimscroller ________________________________       
