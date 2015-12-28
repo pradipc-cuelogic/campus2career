@@ -190,8 +190,8 @@ input:focus,
 [type="checkbox"]:checked,
 [type="radio"]:not(:checked),
 [type="radio"]:checked {
-    position: absolute;
-    left: -9999px;
+    /*position: absolute;
+    left: -9999px;*/
 }
 
 [type="checkbox"]:not(:checked) + label,
@@ -410,11 +410,11 @@ footer {
 
 /* Form Classes */
 .input-holder {
-    margin-bottom:0px;
+    margin-bottom:15px;
     position: relative;
     border-radius: 3px;
     overflow: hidden;
-    input[type="text"], textarea{
+    input[type="text"],input[type="password"], textarea{
         border: #dbdbdb 1px solid;
         border-radius: 3px;
         height: 36px;
@@ -470,6 +470,9 @@ a.play-icon{
         background-size: 100% auto;
     }
 /*}*/
+.table-over {
+    overflow: auto;
+}
 table.datatable {
     font-size: 13px;
     font-weight: normal;
@@ -549,4 +552,5 @@ table.inbox{
 @import url('../pages/dashboard.less');
 @import url('../pages/pgp.less');
 @import url('../pages/cs-list.less');
+@import url('../pages/profile.less');
 @import url('../layout/animation.less');
