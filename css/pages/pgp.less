@@ -2,12 +2,18 @@
     padding: 25px 0 0 0;
     .row {
         margin: 0 -6px;
+        .col-md-2,
         .col-md-3,
         .col-md-4,
         .col-md-5,
         .col-md-6,
         .col-md-7 {
             padding: 0 6px;
+        }
+    }
+    .row1{
+        .grybg{
+            height:300px;
         }
     }
     h2 {
@@ -38,7 +44,7 @@
     .grybg {
         /*min-height: 264px;*/
         padding: 10px;
-        margin-bottom: 15px;
+        margin-bottom:12px;
         background: #f0f2f4;
         h4 {
             margin: 0px 0 10px;
@@ -51,7 +57,7 @@
             margin: 0;
             > tbody > tr > th {
                 border-top: none;
-                background: #FFF;
+                background: #fbfbfb;
                 font-size: 13px;
                 font-weight: 600;
                 color: #262626;
@@ -61,9 +67,9 @@
             }
         }
         .head {
-            background: #fff;
+            background: #fbfbfb;
             padding: 10px 10px 0px 10px;
-            margin-bottom: 10px;
+            margin-bottom: 18px;
             border-bottom: #d9d9d9 1px solid;
             h4 > span {
                 font-weight: normal;
@@ -78,19 +84,19 @@
             font-size: 12px;
             font-weight: normal;
             color: #1a5282;
-            padding-top: 10px;
+            padding-top: 16px;
             img {
                 display: block;
                 margin: 0 auto 13px auto;
             }
             span {
                 padding-left: 20px;
-                display: inline-block;
+                display: inline;
                 &.orange-tick {
-                    background: url(../../images/pgp/orange-tick.png) 6px 10px no-repeat;
+                    background: url(../../images/pgp/orange-tick.png) 0 2px no-repeat;
                 }
                 &.blue-tick {
-                    background: url(../../images/pgp/blue-tick.png) 2px 1px no-repeat;
+                    background: url(../../images/pgp/blue-tick.png) 0 2px no-repeat;
                 }
             }
             a.report {
@@ -118,9 +124,10 @@
             background: url(../../images/pgp/schedule-icon.png) 0 2px no-repeat;
             background-size: auto 20px;
             display: inline-block;
+            margin:6px 0;
         }
         &.endorsement {
-            padding: 15px 10px;
+            padding: 15px;
             text-align: center;
             h4 {
                 margin: 10px 0;
@@ -220,6 +227,7 @@
     background-color: #3d4c5b;
     border-radius: 20px;
     margin-left: 15px;
+    border:0;
 }
 
 .schedule {
@@ -230,6 +238,29 @@
         font-weight: 300;
         color: #484c50;
         margin: 10px 0 20px;
+    }
+}
+
+table.datatable {
+    font-size: 13px;
+    font-weight: normal;
+    color: #636363;
+    > tbody > tr > th {
+        background-color: #f0f2f4;
+        border-top: none;
+        font-weight: 600;
+        color: #262626;
+        padding: 12px;
+    }
+    > tbody > tr > td {
+        padding: 12px;
+        border-top-color: transparent;
+        border-bottom: #d9d9d9 1px solid;
+        vertical-align: middle;
+        position: relative;
+    }
+    .disabled {
+        color: #999999;
     }
 }
 
