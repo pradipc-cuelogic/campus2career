@@ -414,7 +414,7 @@ footer {
     position: relative;
     border-radius: 3px;
     overflow: hidden;
-    input[type="text"],input[type="password"], textarea{
+    input[type="text"], input[type="password"], input[type="url"], textarea{
         border: #dbdbdb 1px solid;
         border-radius: 3px;
         height: 36px;
@@ -422,7 +422,7 @@ footer {
         width: 100%;
     }
     textarea{
-        height:70px;
+        height:112px;
     }
     &.required:after {
         color: #fff;
@@ -544,6 +544,9 @@ table.inbox{
         font-weight: normal;
         color: #979797;
     }
+}
+.no-border{
+    border:none !important;
 }
 
 @import url('../pages/before-login.less');

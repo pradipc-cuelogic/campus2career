@@ -132,179 +132,103 @@
     <section class="middle">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 student-profile connector">
+                <div class="col-md-12 student-profile">
                   <ul class="nav nav-tabs" id="tab-01">
-                    <li class="active"><a href="#info">My Info</a></li>
-                    <li><a href="#activity">My Activites</a></li>
-                    <li><a href="#skills">My Skills</a></li>
-                    <li><a href="#experience">My Experience</a></li>
+                    <li class="active"><a href="#bio">My Bio</a></li>
+                    <li><a href="#portfolio">My Portfolio</a></li>
                   </ul>
                   <div class="tools"> <a href="javascript:;" class="collapse"></a> <a href="#grid-config" data-toggle="modal" class="config"></a> <a href="javascript:;" class="reload"></a> <a href="javascript:;" class="remove"></a> </div>
                   <div class="tab-content">
-                    <div class="tab-pane active" id="info">
+                    <div class="tab-pane active" id="bio">
                       <div class="row column-seperation">
                         <div class="col-md-6 col-sm-6">
-                            <label>First Name</label>
-                            <div class="input-holder required">
-                                <input type="text" name="firstname" required>
+                            <label>Vanity URL</label>
+                            <div class="input-holder input-group">
+                                <span class="input-group-addon">http://www.campus2careers.com/s/</span>
+                                <input type="text" name="vanity-url" class="form-control">
+                            </div>
+                            <label>Personal Tagline</label>
+                            <div class="input-holder">
+                                <input type="text" name="tagline">
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
-                            <label>Last Name</label>
-                            <div class="input-holder required">
-                                <input type="text" name="lastname" required>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <label>School</label>
+                            <label>Personal Description (Bio)</label>
                             <div class="input-holder">
-                                <input type="text" name="school">
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <label>Grade Level</label>
-                            <div class="input-holder required">
-                                <input type="text" name="grade" required>
+                                <textarea name="bio" placeholder="Personal Description"></textarea>
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <label>My Top College Choices</label> <a href="javascript:void(0);" class="info-tooltip" data-toggle="tooltip" data-placement="top" data-title="Please pick the top colleges you are interested in applying too. You can update this anytime.">i</a>
-                            <div class="input-holder">
-                                <div class="tagarea"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <label>GPA</label>
-                            <div class="input-holder">
-                                <select name="gpa" class="form-control">
-                                    <option>Select GPA</option>
-                                    <option>Below 2.0</option>
-                                    <option>Above 3.0</option>
-                                    <option>Above 3.8</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <label>Home City</label>
-                            <div class="input-holder">
-                                <input type="text" name="lastname">
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <label>Home State</label>
-                            <div class="input-holder">
-                                <select name="state" class="form-control">
-                                    <option>Select State</option>
-                                    <option>Alabama</option>
-                                    <option>Florida</option>
-                                    <option>Texas</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <label>Home Zip Code</label>
-                            <div class="input-holder">
-                                <input type="text" name="zipcode">
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane" id="activity">
-                      <div class="row">
-                        <div class="col-md-4">
-                            <label>Honors / Awards</label>
-                            <div class="input-holder">
-                                <div class="tagarea"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <label>Athletics / Clubs</label>
-                            <div class="input-holder">
-                                <div class="tagarea"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <label>Hobbies / Interests</label>
-                            <div class="input-holder">
-                                <div class="tagarea"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <label>Other Activities and Accomplishments</label>
-                            <div class="input-holder">
-                                <textarea name="other-activities"></textarea>
-                            </div>
+                            <h3>Links</h3>
+                            <div class="experience no-border">
+                                <h3>
+                                    <span class="number">1</span>
+                                    <div class="col-md-4">
+                                        <label>Title</label>
+                                        <div class="input-holder">
+                                            <input type="text" name="link-title" value="My Youtube Channel">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label>URL</label>
+                                        <div class="input-holder">
+                                            <input type="url" name="link-url" value="http://www.youtube.com">
+                                        </div>
+                                    </div>
+                                </h3>
+                                <h3>
+                                    <span class="number">2</span>
+                                    <div class="col-md-4">
+                                        <label>Title</label>
+                                        <div class="input-holder">
+                                            <input type="text" name="link-title" value="My Tumblr Page">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label>URL</label>
+                                        <div class="input-holder">
+                                            <input type="url" name="link-url" value="http://www.tumblr.com">
+                                        </div>
+                                    </div>
+                                </h3>
+                                <h3>
+                                    <span class="number">3</span>
+                                    <div class="col-md-4">
+                                        <label>Title</label>
+                                        <div class="input-holder">
+                                            <input type="text" name="link-title" placeholder="Link Title">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label>URL</label>
+                                        <div class="input-holder">
+                                            <input type="url" name="link-url" placeholder="Link URL">
+                                        </div>
+                                    </div>
+                                </h3>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="tab-pane" id="skills">
+                    <div class="tab-pane" id="portfolio">
                       <div class="row">
-                        <div class="col-md-4">
-                            <label>Workforce Skills</label>
-                            <div class="input-holder">
-                                <div class="tagarea"></div>
-                            </div>
+                        <div class="col-md-12 text-right">
+                            <button class="btn btn-primary">Add Attachment</button>
                         </div>
-                        <div class="col-md-4">
-                            <label>Languages</label>
-                            <div class="input-holder">
-                                <div class="tagarea"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <label>IT Skills</label>
-                            <div class="input-holder">
-                                <div class="tagarea"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <label>Unique Skills</label>
-                            <div class="input-holder">
-                                <textarea name="unique-skills"></textarea>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane" id="experience">
-                      <div class="row">
                         <div class="col-md-12">
                           <div class="experience">
-                              <h3><span class="number">1</span> South Texas College <span class="date">Visit Date 3/31/2015</span></h3>
+                              <h3><span class="number">1</span> <a href="javascript:void(0);">Class Assignment</a></h3>
                               <div class="experience-details">
-                                  <div class="rating text-right">
-                                      <span class="star empty"></span>
-                                      <span class="star empty"></span>
-                                      <span class="star empty"></span>
-                                      <span class="star empty"></span>
-                                      <span class="star empty"></span>
-                                  </div>
-                                  <label>Reasons:</label>
-                                  <p>GEAR UP, Ambassadors</p>
-                                  <label>Feedback:</label>
-                                  <p>- I had the chance to meet with advisers at the college.<br>
-                                  - I had the chance to meet with advisers at the college.</p>
-                                  <label>Comments</label>
-                                  <p>After meeting with the Ambassadors and Financial Aid office I knew this is where I wanted to start my college education.<br>
+                                  <label>Description:</label>
+                                  <p>GEAR UP, Ambassadors After meeting with the Ambassadors and Financial Aid office I knew this is where I wanted to start my college education.<br>
                                   It just make sense.</p>
                               </div>
                           </div>
                           <div class="experience">
-                              <h3><span class="number">2</span> South Texas College <span class="date">Visit Date 3/31/2015</span></h3>
+                              <h3><span class="number">2</span> <a href="javascript:void(0);">College Visit Assignment</a></h3>
                               <div class="experience-details">
-                                  <div class="rating text-right">
-                                      <span class="star empty"></span>
-                                      <span class="star empty"></span>
-                                      <span class="star empty"></span>
-                                      <span class="star empty"></span>
-                                      <span class="star empty"></span>
-                                  </div>
-                                  <label>Reasons:</label>
-                                  <p>GEAR UP, Ambassadors</p>
-                                  <label>Feedback:</label>
-                                  <p>- I had the chance to meet with advisers at the college.<br>
-                                  - I had the chance to meet with advisers at the college.</p>
-                                  <label>Comments</label>
-                                  <p>After meeting with the Ambassadors and Financial Aid office I knew this is where I wanted to start my college education.<br>
+                                  <label>Description:</label>
+                                  <p>GEAR UP After meeting with the Ambassadors and Financial Aid office I knew this is where I wanted to start my college education.<br>
                                   It just make sense.</p>
                               </div>
                           </div>
