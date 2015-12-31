@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>Campus to Career</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/bootstrap/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/layout/master-layout.less" rel="stylesheet/less">
+    <script src="js/less.min.js"></script>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <nav class="navbar navbar-fixed-top">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <h1 class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Campus2Careers"><a href="javascript:void(0);"><img src="images/c2c-logo.png" alt="Campus2Careers" title=""></a></h1>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+              <ul class="top-primary-nav reset-ul">
+                  <li><a href="javascript:void(0);" class="topicon" data-toggle="tooltip" data-placement="bottom" data-title="Print"><span class="print">Print</span></a></li>
+                  <li><a href="javascript:void(0);" class="topicon" data-toggle="tooltip" data-placement="bottom" data-title="Support"><span class="support">Support</span></a></li>
+                  <li class="dropdown">
+                      <a href="javascript:void(0);" class="profile hasDropeown" data-toggle="dropdown">
+                          <img src="images/header/profile-pic.jpg" class="top-pic">
+                          <p class="userName">
+                              <span>Darsh Smith</span>
+                              <span>School Name</span></p>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="javascript:void(0);">View</a></li>
+                          <li><a href="javascript:void(0);">Edit</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="javascript:void(0);" class="logout">Logout</a></li>
+              </ul>
+          </div>
+          <div class="navbar">
+              <ul class="nav mainmenu">
+                  <li>
+                      <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Home" class="icon home"></a>
+                  </li>
+                  <li>
+                      <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Dashboard" class="icon dashboard"></a>
+                  </li>
+                  <li class="dropdown" data-toggle="tooltip" data-placement="top" data-title="Profile">
+                      <a href="javascript:void(0);" data-toggle="dropdown" class="icon profile hasDropdown"></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="javascript:void(0);">Edit</a></li>
+                          <li><a href="javascript:void(0);">View</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Career Discovery" class="icon discovery"></a>
+                  </li>
+                  <li class="dropdown" data-toggle="tooltip" data-placement="top" data-title="Opportunities">
+                      <a href="javascript:void(0);" data-toggle="dropdown" class="icon opportunities hasDropdown"></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="javascript:void(0);">BISD Jobs</a></li>
+                          <li><a href="javascript:void(0);">All Jobs</a></li>
+                          <li><a href="javascript:void(0);">Mentors</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Graduation Plan" class="icon plan"></a>
+                  </li>
+                  <li>
+                      <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Calender" class="icon calender"></a>
+                  </li>
+                  <li class="dropdown" data-toggle="tooltip" data-placement="top" data-title="Messages">
+                      <a href="javascript:void(0);" data-toggle="dropdown" class="icon message hasDropdown"><span class="badge">19</span></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="javascript:void(0);">Inbox<span class="badge">19</span></a></li>
+                          <li><a href="javascript:void(0);">Sent</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Folders" class="icon folder"></a>
+                  </li>
+                  <li>
+                      <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Video Wall" class="icon video"></a>
+                  </li>
+                  <li>
+                      <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Settings" class="icon setting"></a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <div class="page-title-wrap">
+      <h2>Opportunities Matches</h2>
+      <div class="notification-wrap">
+          <div class="notifications-slide">
+              <a class="bell-toggle" href="javascript:void(0);"></a>
+              <div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
+                  <ol class="carousel-indicators">
+                      <li class="active" data-slide-to="0" data-target="#carousel-example-generic"></li>
+                      <li data-slide-to="1" data-target="#carousel-example-generic" class=""></li>
+                      <li data-slide-to="2" data-target="#carousel-example-generic" class=""></li>
+                      <li data-slide-to="3" data-target="#carousel-example-generic" class=""></li>
+                  </ol>
+                  <div role="listbox" class="carousel-inner">
+                      <div class="item active">New announcement
+                          <br> Lorem ipsum dolor sit amet, consectetur ...
+                          <br>
+                          <a href="javascript:void(0);">More details...</a></div>
+                      <div class="item">New announcement
+                          <br> Lorem ipsum dolor sit amet, consectetur ...
+                          <br>
+                          <a href="javascript:void(0);">More details...</a></div>
+                      <div class="item">New announcement
+                          <br> Lorem ipsum dolor sit amet, consectetur ...
+                          <br>
+                          <a href="javascript:void(0);">More details...</a></div>
+                      <div class="item">New announcement
+                          <br> Lorem ipsum dolor sit amet, consectetur ...
+                          <br>
+                          <a href="javascript:void(0);">More details...</a></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <section class="middle">
+    <div class="container">
+      <div class="row">
+        <form>
+          <div class="col-md-6 col-sm-6">
+            <!-- <h4>Primary Details <a href="javascript:void(0);" class="pull-right edit-icon"></a></h4> -->
+            <div class="form-field">
+              <label>Job Types</label>
+              <div class="input-holder">
+                <input type="text" name="type" class="form-control" placeholder="Filter by Job Types">
+              </div>
+            </div>
+            <div class="form-field">
+              <label>Departments</label>
+              <div class="input-holder">
+                <input type="text" name="departments" class="form-control" placeholder="Filter by Departments">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-field">
+                  <label>Desired Location</label>
+                  <div class="input-holder">
+                    <input type="text" name="location" class="form-control" placeholder="Filter by ZIP Code">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-field">
+                  <label>Range</label>
+                  <div class="input-holder">
+                    <select name="range" class="form-control">
+                      <option>Select</option>
+                      <option>1 Mile</option>
+                      <option>2 Miles</option>
+                      <option>3 Miles</option>
+                      <option>4 Miles</option>
+                      <option>5 Miles</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-field pull-right">
+              <div class="input-holder">
+                <input type="submit" name="submit" class="btn btn-primary" value="Submit">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <!-- <h4>Change Password</h4> -->
+            <div class="form-field">
+              <label>Industries</label>
+              <div class="input-holder">
+                <input type="text" name="industries" class="form-control" placeholder="Filter by Industries">
+              </div>
+            </div>
+            <div class="form-field">
+              <label>Company Sizes</label>
+              <div class="input-holder">
+                <input type="text" name="co-sizes" class="form-control" placeholder="Filter by Company Sizes">
+              </div>
+            </div>
+            <div class="form-field">
+              <label>Search</label>
+              <div class="input-holder">
+                <input type="text" name="search" class="form-control" placeholder="Search by Keywords">
+              </div>
+            </div>
+            <div class="form-field pull-right">
+              <div class="input-holder">
+                <a href="javascript:void(0);" class="btn btn-primary" data-target="#edit-student-details" data-toggle="modal">Update your Workplace Inventory</a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="table-over jobs">
+            <table class="table datatable">
+              <tr>
+                <td width="70"><a href="javascript:void(0);" class="employer-img"><img src="images/jobs.png"></a></td>
+                <td>
+                  <h3><a href="javascript:void(0);">Web Developer</a></h3>
+                  <h4><a href="javascript:void(0);">TWE</a></h4>
+                  <p>If you’re a bright HTML5 developer we’ve got a challenge for you! You’ll be assisting a Silicon Valley startup in porting our web platform to HTML5/mobile format. On top of that, you’ll be developing a simple HTML5 mobile app for acquiring and uploading document images. Your graphic design experience would make you an even better fit. Javascript/jQuery experience is strongly preferred. GitHub/SO presence is to your advantage.</p>
+                  <div class="badge-holder">
+                    <span class="badge">Full Time</span>
+                    <span class="badge">0-4 Employees</span>
+                    <span class="badge">IT</span>
+                    <span class="badge">Internship</span>
+                  </div>
+                </td>
+                <td><span class="big-fig">94%</span></td>
+              </tr>
+              <tr>
+                <td width="70"><a href="javascript:void(0);" class="employer-img"><img src="images/jobs.png"></a></td>
+                <td>
+                  <h3><a href="javascript:void(0);">API Software Engineer</a></h3>
+                  <h4><a href="javascript:void(0);">Job Market Maker</a></h4>
+                  <p>The hiring company for the API Software Engineer position is OneinaMil. OneinaMil is looking for API Software Engineers to build the foundation that powers these mobile apps for for an amazing Charleston, SC company. As an API Development Engineer on the mobile apps team, you’ll be part of a tightknit product team dedicated to building amazing tools and technology. You will join the mobile development team to design specific endpoints and solve data needs. Our daily work entails coding, conceptualizing, innovating and collaborating with designers and engineers. What you will do: ?</p>
+                  <div class="badge-holder">
+                    <span class="badge">Full Time</span>
+                    <span class="badge">11-50 Employees</span>
+                    <span class="badge">IT</span>
+                  </div>
+                </td>
+                <td><span class="big-fig">85%</span></td>
+              </tr>
+              <tr>
+                <td width="70"><a href="javascript:void(0);" class="employer-img"><img src="images/jobs.png"></a></td>
+                <td>
+                  <h3><a href="javascript:void(0);">Video Software Developer</a></h3>
+                  <h4><a href="javascript:void(0);">Blastro Networks</a></h4>
+                  <p>Video tech startup based in Austin TX is seeking talented developers for a white label, pay-for-view live streaming platform that enables creative broadcast professionals to deliver a first-class viewing experience to their loyal audience. Our platform and streaming production services have been utilized by some of the biggest media brands and artists for concerts, music festivals, sporting events, conferences, and more. Our company has 20 years experience in live streamcasting. We are seeking talented developers at all experience levels to join our team to create the next evolution in streaming video players, infrastructure, and API.</p>
+                  <div class="badge-holder">
+                    <span class="badge">Full Time</span>
+                    <span class="badge">11-50 Employees</span>
+                    <span class="badge">Engineering / R&D</span>
+                    <span class="badge">Science, Technology, Engineering & Mathematics</span>
+                  </div>
+                </td>
+                <td><span class="big-fig">70%</span></td>
+              </tr>
+            </table>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="edit-student-details" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header student-profile connector">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <ul class="nav nav-tabs" id="tab-01">
+                    <li class="active"><a href="#one">1</a></li>
+                    <li><a href="#two">2</a></li>
+                    <li><a href="#three">3</a></li>
+                  </ul>
+                  <div class="tools">
+                    <a href="javascript:;" class="collapse"></a>
+                    <a href="#grid-config" data-toggle="modal" class="config"></a>
+                    <a href="javascript:;" class="reload"></a>
+                    <a href="javascript:;" class="remove"></a>
+                  </div>
+                </div>
+                <div class="modal-body">
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="one">
+                      <div class="row column-seperation">
+                        <div class="col-md-12">
+                          <ol class="inventory">
+                            <li>
+                              <b>Which type of work would you most prefer?</b>
+                              <label for="one-one"><input type="radio" name="radio1" id="one-one"> Artistic - Working with forms, designs and patterns that require self-expression and creativity</label>
+                              <label for="one-two"><input type="radio" name="radio1" id="one-two"> Investigative - Working with ideas and problems that require research, critical thinking, and analytics</label>
+                              <label for="one-three"><input type="radio" name="radio1" id="one-three"> Project-oriented - Working on or carrying out projects and tasks that lead to decision making</label>
+                              <label for="one-four"><input type="radio" name="radio1" id="one-four"> Social - Working and communicating with people to help, teach, or provide a service to others</label>
+                            </li>
+                            <li>
+                              <b>Which work environment would you most prefer?</b>
+                              <label for="two-one"><input type="radio" name="radio2" id="two-one"> Busy & team-oriented - large open spaces/loft-style</label>
+                              <label for="two-two"><input type="radio" name="radio2" id="two-two"> Flexible & telecommute - work from home or location of your choice</label>
+                              <label for="two-three"><input type="radio" name="radio2" id="two-three"> Mixed - individual offices/cubes with open shared space</label>
+                              <label for="two-four"><input type="radio" name="radio2" id="two-four"> Quiet & individual-oriented - cubes/offices and personal space</label>
+                            </li>
+                            <li>
+                              <b>Which dress code would you most prefer?</b>
+                              <label for="three-one"><input type="radio" name="radio3" id="three-one"> Business casual - professional yet personal (khakis, collared shirts, casual dresses)</label>
+                              <label for="three-two"><input type="radio" name="radio3" id="three-two"> Business formal - dress for success (business suits and dresses, slacks, ties, heels, etc.)</label>
+                              <label for="three-three"><input type="radio" name="radio3" id="three-three"> Casual - just keep it clean (jeans and shorts, flip flops)</label>
+                              <label for="three-four"><input type="radio" name="radio3" id="three-four"> Uniform - standard industry attire or a company uniform (scrubs, company shirts, etc.)</label>
+                            </li>
+                            <li>
+                              <b>What are your work schedule expectations for the right position?</b>
+                              <label for="four-one"><input type="radio" name="radio4" id="four-one"> 9 AM - 5 PM - looking for work life balance</label>
+                              <label for="four-two"><input type="radio" name="radio4" id="four-two"> 8 AM - 8 PM - want to climb the corporate ladder</label>
+                              <label for="four-three"><input type="radio" name="radio4" id="four-three"> Varied -will work the hours that are needed to get the job done</label>
+                              <label for="four-four"><input type="radio" name="radio4" id="four-four"> N/A -looking for a part-time, project, or internship position with pre-set hours</label>
+                            </li>
+                            <li>
+                              <b>Which management style would you most prefer?</b>
+                              <label for="five-one"><input type="radio" name="radio5" id="five-one"> Delegating - minimal support and minimal instruction (lets me figure out what needs to be done)</label>
+                              <label for="five-two"><input type="radio" name="radio5" id="five-two"> Directing - significant support and detailed instruction (tells me the best way to get it done)</label>
+                              <label for="five-three"><input type="radio" name="radio5" id="five-three"> Influencing - minimal support and detailed instruction (provides direction and lets me execute)</label>
+                              <label for="five-four"><input type="radio" name="radio5" id="five-four"> Supporting - significant support and minimal instruction (works with me to accomplish objectives)</label>
+                            </li>
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="two">
+                      <div class="row column-seperation">
+                        <div class="col-md-12">
+                          <ol class="inventory" start="6">
+                            <li>
+                              <b>Which communication style would you most prefer?</b>
+                              <label for="six-one"><input type="radio" name="radio6" id="six-one"> Informal - information is shared unstructured and virally throughout the company</label>
+                              <label for="six-two"><input type="radio" name="radio6" id="six-two"> Organizational - information is cascaded by level in the company</label>
+                              <label for="six-three"><input type="radio" name="radio6" id="six-three"> Open and direct - information is distributed regularly via e-mail and at meetings</label>
+                              <label for="six-four"><input type="radio" name="radio6" id="six-four"> Relational - information is shared formally by teams and through other groupings</label>
+                            </li>
+                            <li>
+                              <b>Which style of leadership would you most prefer?</b>
+                              <label for="seven-one"><input type="radio" name="radio7" id="seven-one"> Consensus - all for one and one for all</label>
+                              <label for="seven-two"><input type="radio" name="radio7" id="seven-two"> Cooperative - two heads are better than one</label>
+                              <label for="seven-three"><input type="radio" name="radio7" id="seven-three"> Knowledge-based - let the expert decide</label>
+                              <label for="seven-four"><input type="radio" name="radio7" id="seven-four"> Visionary - follow me to the promised land</label>
+                            </li>
+                            <li>
+                              <b>Which motivators would drive your best performance?</b>
+                              <label for="eight-one"><input type="radio" name="radio8" id="eight-one"> Achievement - Company is results-oriented, allowing employees to leverage their strengths</label>
+                              <label for="eight-two"><input type="radio" name="radio8" id="eight-two"> Leadership - Company provides direct management support, guidance and encouragement</label>
+                              <label for="eight-three"><input type="radio" name="radio8" id="eight-three"> Learning - Company provides opportunity for growth and development</label>
+                              <label for="eight-four"><input type="radio" name="radio8" id="eight-four"> Recognition - Company provides prestige and opportunities for advancement</label>
+                            </li>
+                            <li>
+                              <b>Which company culture would you most prefer?</b>
+                              <label for="nine-one"><input type="radio" name="radio9" id="nine-one"> Adventurous - high-risk/high reward and entrepreneurial where there is a lot of energy and autonomy</label>
+                              <label for="nine-two"><input type="radio" name="radio9" id="nine-two"> Creative - team-oriented and collaborative where ideas are valued and work is shared toward a common vision</label>
+                              <label for="nine-three"><input type="radio" name="radio9" id="nine-three"> Powerful - achievement and task-oriented where individuals are competent and independent</label>
+                              <label for="nine-four"><input type="radio" name="radio9" id="nine-four"> Stable - systematic and established where roles, responsibilities, and expectations are clearly defined</label>
+                            </li>
+                            <li>
+                              <b>Which company value is most important to you?</b>
+                              <label for="ten-one"><input type="radio" name="radio10" id="ten-one"> Excellence - show pride, dedication, and a commitment toward quality in everything that we do</label>
+                              <label for="ten-two"><input type="radio" name="radio10" id="ten-two"> Integrity - employ the highest ethical standards, demonstrating honesty and fairness in every action that we take</label>
+                              <label for="ten-three"><input type="radio" name="radio10" id="ten-three"> Respect - treat our team members, customers, partners and suppliers with professionalism and sensitivity</label>
+                              <label for="ten-four"><input type="radio" name="radio10" id="ten-four"> Teamwork - supportive and loyal to one another with a focus on empowerment and collaboration</label>
+                            </li>
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="three">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label>Preferred Job Type</label>
+                          <div class="input-holder">
+                            <select name="job-type" class="form-control">
+                              <option>Select Job Type</option>
+                              <option>Apprenticeship</option>
+                              <option>Flexible</option>
+                              <option>Full-time</option>
+                              <option>Internship</option>
+                              <option>On-Campus</option>
+                              <option>Part-time / Temporary</option>
+                              <option>Volunteer</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label>Desired Position</label>
+                          <div class="input-holder">
+                            <input type="text" name="position" placeholder="Desired Position">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-reset" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 copyright">&copy; SURESCORE INC</div>
+      </div>
+    </div>
+  </footer>
+  <span class='scrollup'><img src="images/top.png" alt="scroll to top"></span>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/jquery-ui-1.10.1.custom.min.js"></script>
+  <script src="js/jquery.slimscroll.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/master-layout.js"></script>
+  <script src="js/tabs_accordian.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>

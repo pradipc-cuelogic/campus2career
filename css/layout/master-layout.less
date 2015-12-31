@@ -548,6 +548,58 @@ table.inbox{
 .no-border{
     border:none !important;
 }
+.jobs{
+    table.datatable > tbody > tr > td{
+        border-top-color: #d9d9d9;
+        vertical-align: top;
+    }
+    .employer-img{
+        width: 70px;
+        height: auto;
+        display: block;
+        border-radius:40px;
+        overflow: hidden;
+    }
+    h3, h4{
+        margin-top: 0;
+        a{
+            color: #333;
+        }
+    }
+    .big-fig{
+        font-size: 60px;
+        font-weight: bold;
+    }
+    .badge-holder{
+        .badge{
+            padding:3px 15px;
+            margin-right:5px;
+            font-weight:normal;
+            border-radius:4px;
+            background-color:#348be5;
+        }
+    }
+}
+.modal .modal-body{
+    ol.inventory{
+        padding-left:30px;
+        li{
+            margin-bottom: 15px;
+            font-weight: bold;
+            > b{
+                font-weight: 600;
+                display:block;
+                margin-bottom:10px;
+            }
+            > label{
+                font-size: 13px;
+                line-height: 20px;
+                display: block;
+                margin-bottom:5px;
+            }
+        }
+    }
+}
 
 @import url('../pages/before-login.less');
 @import url('theme.less');
