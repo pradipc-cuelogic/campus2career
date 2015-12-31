@@ -414,12 +414,14 @@ footer {
     position: relative;
     border-radius: 3px;
     overflow: hidden;
+    color:#222;
     input[type="text"], input[type="password"], input[type="url"], textarea{
         border: #dbdbdb 1px solid;
         border-radius: 3px;
         height: 36px;
         padding: 5px 20px 5px 10px;
         width: 100%;
+        color: #575757;
     }
     textarea{
         height:112px;
@@ -548,6 +550,18 @@ table.inbox{
 .no-border{
     border:none !important;
 }
+.label{
+    padding:3px 15px;
+    margin-bottom:3px;
+    font-size:11px;
+    font-weight:normal;
+    line-height: 16px;
+    border-radius:4px;
+    display: inline-block;
+}
+.label-info{
+    background-color:#348be5;
+}
 .jobs{
     table.datatable > tbody > tr > td{
         border-top-color: #d9d9d9;
@@ -569,15 +583,6 @@ table.inbox{
     .big-fig{
         font-size: 60px;
         font-weight: bold;
-    }
-    .badge-holder{
-        .badge{
-            padding:3px 15px;
-            margin-right:5px;
-            font-weight:normal;
-            border-radius:4px;
-            background-color:#348be5;
-        }
     }
 }
 .modal .modal-body{
