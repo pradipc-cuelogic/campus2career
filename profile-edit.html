@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>Campus to Career</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/bootstrap/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/layout/master-layout.less" rel="stylesheet/less">
+    <script src="js/less.min.js"></script>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top dashboard-header">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h1 class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Campus2Careers"><a href="javascript:void(0);"><img src="images/c2c-logo.png" alt="Campus2Careers" title=""></a></h1>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="top-primary-nav reset-ul">
+                    <li><a href="javascript:void(0);" class="topicon" data-toggle="tooltip" data-placement="bottom" data-title="Print"><span class="print">Print</span></a></li>
+                    <li><a href="javascript:void(0);" class="topicon" data-toggle="tooltip" data-placement="bottom" data-title="Support"><span class="support">Support</span></a></li>
+                    <li><a href="javascript:void(0);" class="logout">Logout</a></li>
+                </ul>
+            </div>
+            <div class="navbar">
+                <ul class="nav mainmenu">
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Home" class="icon home"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Dashboard" class="icon dashboard"></a>
+                    </li>
+                    <li class="dropdown" data-toggle="tooltip" data-placement="top" data-title="Profile">
+                        <a href="javascript:void(0);" data-toggle="dropdown" class="icon profile hasDropdown"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0);">Edit</a></li>
+                            <li><a href="javascript:void(0);">View</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Career Discovery" class="icon discovery"></a>
+                    </li>
+                    <li class="dropdown" data-toggle="tooltip" data-placement="top" data-title="Opportunities">
+                        <a href="javascript:void(0);" data-toggle="dropdown" class="icon opportunities hasDropdown"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0);">BISD Jobs</a></li>
+                            <li><a href="javascript:void(0);">All Jobs</a></li>
+                            <li><a href="javascript:void(0);">Mentors</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Graduation Plan" class="icon plan"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Calender" class="icon calender"></a>
+                    </li>
+                    <li class="dropdown" data-toggle="tooltip" data-placement="top" data-title="Messages">
+                        <a href="javascript:void(0);" data-toggle="dropdown" class="icon message hasDropdown"><span class="badge">19</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0);">Inbox<span class="badge">19</span></a></li>
+                            <li><a href="javascript:void(0);">Sent</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Folders" class="icon folder"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Video Wall" class="icon video"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Settings" class="icon setting"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="short-intro">
+            <div class="container">
+                <div class="row pos-rel">
+                    <div class="profilepic">
+                        <img src="images/header/profile-pic.jpg" class="" alt="Darsh Smith">
+                        <div class="profilepic-upload">
+                            <span class="edit-photo">Edit</span>
+                            <input type="file" class="upload">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <h2>Darsh Smith</h2>
+                        <p><i>“Work hard, get the job”</i></p>
+                    </div>
+                    <div class="col-md-6 col-sm-7 pull-right text-right">
+                        <div class="fileuploader">
+                            <div class="uploader">
+                                <span class="upload-video">Upload Video</span>
+                                <input type="file" class="upload">
+                            </div>
+                        </div>
+                        <div class="fileuploader">
+                            <div class="uploader">
+                                <span class="upload-resume">Upload Resume</span>
+                                <input type="file" class="upload">
+                            </div>
+                             | <a href="javascript:void(0);">resume.doc</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 student-profile connector">
+                  <ul class="nav nav-tabs" id="tab-01">
+                    <li class="active"><a href="#info">My Info</a></li>
+                    <li><a href="#activity">My Activites</a></li>
+                    <li><a href="#skills">My Skills</a></li>
+                    <li><a href="#experience">My Experience</a></li>
+                  </ul>
+                  <div class="tools"> <a href="javascript:;" class="collapse"></a> <a href="#grid-config" data-toggle="modal" class="config"></a> <a href="javascript:;" class="reload"></a> <a href="javascript:;" class="remove"></a> </div>
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="info">
+                      <div class="row column-seperation">
+                        <div class="col-md-6 col-sm-6">
+                            <label>First Name</label>
+                            <div class="input-holder required">
+                                <input type="text" name="firstname" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <label>Last Name</label>
+                            <div class="input-holder required">
+                                <input type="text" name="lastname" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <label>School</label>
+                            <div class="input-holder">
+                                <input type="text" name="school">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <label>Grade Level</label>
+                            <div class="input-holder required">
+                                <input type="text" name="grade" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label>My Top College Choices</label> <a href="javascript:void(0);" class="info-tooltip" data-toggle="tooltip" data-placement="top" data-title="Please pick the top colleges you are interested in applying too. You can update this anytime.">i</a>
+                            <div class="input-holder">
+                                <div class="tagarea"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <label>GPA</label>
+                            <div class="input-holder">
+                                <select name="gpa" class="form-control">
+                                    <option>Select GPA</option>
+                                    <option>Below 2.0</option>
+                                    <option>Above 3.0</option>
+                                    <option>Above 3.8</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <label>Home City</label>
+                            <div class="input-holder">
+                                <input type="text" name="lastname">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <label>Home State</label>
+                            <div class="input-holder">
+                                <select name="state" class="form-control">
+                                    <option>Select State</option>
+                                    <option>Alabama</option>
+                                    <option>Florida</option>
+                                    <option>Texas</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <label>Home Zip Code</label>
+                            <div class="input-holder">
+                                <input type="text" name="zipcode">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="activity">
+                      <div class="row">
+                        <div class="col-md-4">
+                            <label>Honors / Awards</label>
+                            <div class="input-holder">
+                                <div class="tagarea"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label>Athletics / Clubs</label>
+                            <div class="input-holder">
+                                <div class="tagarea"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label>Hobbies / Interests</label>
+                            <div class="input-holder">
+                                <div class="tagarea"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label>Other Activities and Accomplishments</label>
+                            <div class="input-holder">
+                                <textarea name="other-activities"></textarea>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="skills">
+                      <div class="row">
+                        <div class="col-md-4">
+                            <label>Workforce Skills</label>
+                            <div class="input-holder">
+                                <div class="tagarea"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label>Languages</label>
+                            <div class="input-holder">
+                                <div class="tagarea"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label>IT Skills</label>
+                            <div class="input-holder">
+                                <div class="tagarea"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label>Unique Skills</label>
+                            <div class="input-holder">
+                                <textarea name="unique-skills"></textarea>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="experience">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="experience">
+                              <h3><span class="number">1</span> South Texas College <span class="date">Visit Date 3/31/2015</span></h3>
+                              <div class="experience-details">
+                                  <div class="rating text-right">
+                                      <span class="star empty"></span>
+                                      <span class="star empty"></span>
+                                      <span class="star empty"></span>
+                                      <span class="star empty"></span>
+                                      <span class="star empty"></span>
+                                  </div>
+                                  <label>Reasons:</label>
+                                  <p>GEAR UP, Ambassadors</p>
+                                  <label>Feedback:</label>
+                                  <p>- I had the chance to meet with advisers at the college.<br>
+                                  - I had the chance to meet with advisers at the college.</p>
+                                  <label>Comments</label>
+                                  <p>After meeting with the Ambassadors and Financial Aid office I knew this is where I wanted to start my college education.<br>
+                                  It just make sense.</p>
+                              </div>
+                          </div>
+                          <div class="experience">
+                              <h3><span class="number">2</span> South Texas College <span class="date">Visit Date 3/31/2015</span></h3>
+                              <div class="experience-details">
+                                  <div class="rating text-right">
+                                      <span class="star empty"></span>
+                                      <span class="star empty"></span>
+                                      <span class="star empty"></span>
+                                      <span class="star empty"></span>
+                                      <span class="star empty"></span>
+                                  </div>
+                                  <label>Reasons:</label>
+                                  <p>GEAR UP, Ambassadors</p>
+                                  <label>Feedback:</label>
+                                  <p>- I had the chance to meet with advisers at the college.<br>
+                                  - I had the chance to meet with advisers at the college.</p>
+                                  <label>Comments</label>
+                                  <p>After meeting with the Ambassadors and Financial Aid office I knew this is where I wanted to start my college education.<br>
+                                  It just make sense.</p>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 text-right">
+                    <div class="col-md-12">
+                        <button class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 copyright">&copy; SURESCORE INC</div>
+            </div>
+        </div>
+    </footer>
+    <span class='scrollup'><img src="images/top.png" alt="scroll to top"></span>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script -->
+    <script src="js/jquery-ui-1.10.1.custom.min.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/master-layout.js"></script>
+    <script src="js/tabs_accordian.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>
