@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>Campus to Career</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/bootstrap/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/layout/master-layout.less" rel="stylesheet/less">
+    <script src="js/less.min.js"></script>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <nav class="navbar navbar-fixed-top">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <h1 class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Campus2Careers"><a href="javascript:void(0);"><img src="images/c2c-logo.png" alt="Campus2Careers" title=""></a></h1>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+              <ul class="top-primary-nav reset-ul">
+                  <li><a href="javascript:void(0);" class="topicon" data-toggle="tooltip" data-placement="bottom" data-title="Print"><span class="print">Print</span></a></li>
+                  <li><a href="javascript:void(0);" class="topicon" data-toggle="tooltip" data-placement="bottom" data-title="Support"><span class="support">Support</span></a></li>
+                  <li class="dropdown">
+                      <a href="javascript:void(0);" class="profile hasDropeown" data-toggle="dropdown">
+                          <img src="images/header/profile-pic.jpg" class="top-pic">
+                          <p class="userName">
+                              <span>Darsh Smith</span>
+                              <span>School Name</span></p>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="javascript:void(0);">View</a></li>
+                          <li><a href="javascript:void(0);">Edit</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="javascript:void(0);" class="logout">Logout</a></li>
+              </ul>
+          </div>
+          <div class="navbar">
+              <ul class="nav mainmenu">
+                  <li>
+                      <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Home" class="icon home"></a>
+                  </li>
+                  <li>
+                      <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Dashboard" class="icon dashboard"></a>
+                  </li>
+                  <li class="dropdown" data-toggle="tooltip" data-placement="top" data-title="Profile">
+                      <a href="javascript:void(0);" data-toggle="dropdown" class="icon profile hasDropdown"></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="javascript:void(0);">Edit</a></li>
+                          <li><a href="javascript:void(0);">View</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Career Discovery" class="icon discovery"></a>
+                  </li>
+                  <li class="dropdown" data-toggle="tooltip" data-placement="top" data-title="Opportunities">
+                      <a href="javascript:void(0);" data-toggle="dropdown" class="icon opportunities hasDropdown"></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="javascript:void(0);">BISD Jobs</a></li>
+                          <li><a href="javascript:void(0);">All Jobs</a></li>
+                          <li><a href="javascript:void(0);">Mentors</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Graduation Plan" class="icon plan"></a>
+                  </li>
+                  <li>
+                      <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Calender" class="icon calender"></a>
+                  </li>
+                  <li class="dropdown" data-toggle="tooltip" data-placement="top" data-title="Messages">
+                      <a href="javascript:void(0);" data-toggle="dropdown" class="icon message hasDropdown"><span class="badge">19</span></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="javascript:void(0);">Inbox<span class="badge">19</span></a></li>
+                          <li><a href="javascript:void(0);">Sent</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Folders" class="icon folder"></a>
+                  </li>
+                  <li>
+                      <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Video Wall" class="icon video"></a>
+                  </li>
+                  <li>
+                      <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Settings" class="icon setting"></a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <div class="page-title-wrap">
+      <h2>Career Discovery</h2>
+      <div class="notification-wrap">
+          <div class="notifications-slide">
+              <a class="bell-toggle" href="javascript:void(0);"></a>
+              <div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
+                  <ol class="carousel-indicators">
+                      <li class="active" data-slide-to="0" data-target="#carousel-example-generic"></li>
+                      <li data-slide-to="1" data-target="#carousel-example-generic" class=""></li>
+                      <li data-slide-to="2" data-target="#carousel-example-generic" class=""></li>
+                      <li data-slide-to="3" data-target="#carousel-example-generic" class=""></li>
+                  </ol>
+                  <div role="listbox" class="carousel-inner">
+                      <div class="item active">New announcement
+                          <br> Lorem ipsum dolor sit amet, consectetur ...
+                          <br>
+                          <a href="javascript:void(0);">More details...</a></div>
+                      <div class="item">New announcement
+                          <br> Lorem ipsum dolor sit amet, consectetur ...
+                          <br>
+                          <a href="javascript:void(0);">More details...</a></div>
+                      <div class="item">New announcement
+                          <br> Lorem ipsum dolor sit amet, consectetur ...
+                          <br>
+                          <a href="javascript:void(0);">More details...</a></div>
+                      <div class="item">New announcement
+                          <br> Lorem ipsum dolor sit amet, consectetur ...
+                          <br>
+                          <a href="javascript:void(0);">More details...</a></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <section class="middle">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- <h4>Career Discovery</h4> -->
+          <p> Below is a list of the top occupations and career pathways for you based on the selections in your Profile. Learn more about yourself, your strengths, and the type of work you like to perform by researching your top occupations and pathways. Watch this <a href="javascript:void(0);">VIDEO</a> to learn more about the assessment or click on the link next to each score for a description of the category.</p>
+          <div class="form-field text-right">
+            <div class="input-holder">
+              <a href="javascript:void(0);" class="btn btn-primary" data-target="#edit-student-details" data-toggle="modal">Update your Interest Inventory</a> &nbsp; <a href="javascript:void(0);" class="btn btn-primary">Career Cluster Report</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="career-discovery">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="discovery">
+            <div class="left-disc">
+              <img src="images/realistic-icon.png">
+              <div class="career-no">31</div>
+            </div>
+            <h4>Realistic</h4>
+            <p>Building, Fixing, Working Outdoors</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="discovery">
+            <div class="left-disc">
+              <img src="images/investigative-icon.png">
+              <div class="career-no">29</div>
+            </div>
+            <h4>Investigative</h4>
+            <p>Researching, Thinking, Experimenting</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="discovery">
+            <div class="left-disc">
+              <img src="images/artistic-icon.png">
+              <div class="career-no">21</div>
+            </div>
+            <h4>Artistic</h4>
+            <p>Creating, Designing, Expressing</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="discovery">
+            <div class="left-disc">
+              <img src="images/social-icon.png">
+              <div class="career-no">26</div>
+            </div>
+            <h4>Social</h4>
+            <p>Helping, Teaching, Encouraging</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="discovery">
+            <div class="left-disc">
+              <img src="images/enterprising-icon.png">
+              <div class="career-no">27</div>
+            </div>
+            <h4>Enterprising</h4>
+            <p>Leading, Selling, Persuading</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="discovery">
+            <div class="left-disc">
+              <img src="images/conventional-icon.png">
+              <div class="career-no">22</div>
+            </div>
+            <h4>Conventional</h4>
+            <p>Organizing, Categorizing, Recording</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="middle">
+    <div class="container">
+      <div class="row">
+        <form>
+          <div class="col-md-5 col-sm-5">
+            <div class="form-field">
+              <div class="input-holder">
+                <select name="cluster" class="form-control">
+                  <option>All Career Clusters</option>
+                  <option>Agriculture, Food & Natural Resources</option>
+                  <option>Business, Management & Administration</option>
+                  <option>Government & Public Administration</option>
+                  <option>Manufacturing</option>
+                  <option>Science, Technology, Engineering & Mathematics</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-5">
+            <div class="form-field">
+              <div class="input-holder">
+                <input type="text" name="search" class="form-control" placeholder="Search by Keywords">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-2">
+            <div class="form-field">
+              <div class="input-holder">
+                <input type="submit" name="submit" class="btn btn-primary" value="Submit">
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="col-md-12">
+            <div class="checkboxfilter">Only show careers that :
+              <label for="growing"><input type="checkbox" name="confirm" id="growing" /> Are Growing</label>
+              <label for="college"><input type="checkbox" name="confirm" id="college" /> Requires College</label>
+              <label for="liked"><input type="checkbox" name="confirm" id="liked" /> That I Liked</label>
+              <label for="disliked"><input type="checkbox" name="confirm" id="disliked" /> Include Disliked</label>
+              <label for="local"><input type="checkbox" name="confirm" id="local" /> Local Programs</label>
+            </div>
+          </div>
+        </form>
+        <div class="col-md-12">
+          <div class="table-over jobs">
+            <table class="table datatable">
+              <tr>
+                <td width="70"><a href="javascript:void(0);" class="employer-img"><img src="images/jobs.png"></a></td>
+                <td>
+                  <h3><a href="javascript:void(0);">Web Developer</a></h3>
+                  <h4><a href="javascript:void(0);">TWE</a></h4>
+                  <p>If you’re a bright HTML5 developer we’ve got a challenge for you! You’ll be assisting a Silicon Valley startup in porting our web platform to HTML5/mobile format. On top of that, you’ll be developing a simple HTML5 mobile app for acquiring and uploading document images. Your graphic design experience would make you an even better fit. Javascript/jQuery experience is strongly preferred. GitHub/SO presence is to your advantage.</p>
+                  <div class="label-holder">
+                    <span class="label label-info">Full Time</span>
+                    <span class="label label-info">0-4 Employees</span>
+                    <span class="label label-info">IT</span>
+                    <span class="label label-info">Internship</span>
+                  </div>
+                </td>
+                <td><span class="big-fig">94%</span></td>
+              </tr>
+              <tr>
+                <td width="70"><a href="javascript:void(0);" class="employer-img"><img src="images/jobs.png"></a></td>
+                <td>
+                  <h3><a href="javascript:void(0);">API Software Engineer</a></h3>
+                  <h4><a href="javascript:void(0);">Job Market Maker</a></h4>
+                  <p>The hiring company for the API Software Engineer position is OneinaMil. OneinaMil is looking for API Software Engineers to build the foundation that powers these mobile apps for for an amazing Charleston, SC company. As an API Development Engineer on the mobile apps team, you’ll be part of a tightknit product team dedicated to building amazing tools and technology. You will join the mobile development team to design specific endpoints and solve data needs. Our daily work entails coding, conceptualizing, innovating and collaborating with designers and engineers. What you will do: ?</p>
+                  <div class="label-holder">
+                    <span class="label label-info">Full Time</span>
+                    <span class="label label-info">11-50 Employees</span>
+                    <span class="label label-info">IT</span>
+                  </div>
+                </td>
+                <td><span class="big-fig">85%</span></td>
+              </tr>
+              <tr>
+                <td width="70"><a href="javascript:void(0);" class="employer-img"><img src="images/jobs.png"></a></td>
+                <td>
+                  <h3><a href="javascript:void(0);">Video Software Developer</a></h3>
+                  <h4><a href="javascript:void(0);">Blastro Networks</a></h4>
+                  <p>Video tech startup based in Austin TX is seeking talented developers for a white label, pay-for-view live streaming platform that enables creative broadcast professionals to deliver a first-class viewing experience to their loyal audience. Our platform and streaming production services have been utilized by some of the biggest media brands and artists for concerts, music festivals, sporting events, conferences, and more. Our company has 20 years experience in live streamcasting. We are seeking talented developers at all experience levels to join our team to create the next evolution in streaming video players, infrastructure, and API.</p>
+                  <div class="label-holder">
+                    <span class="label label-info">Full Time</span>
+                    <span class="label label-info">11-50 Employees</span>
+                    <span class="label label-info">Engineering / R&D</span>
+                    <span class="label label-info">Science, Technology, Engineering & Mathematics</span>
+                  </div>
+                </td>
+                <td><span class="big-fig">70%</span></td>
+              </tr>
+            </table>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="edit-student-details" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header student-profile connector">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <ul class="nav nav-tabs" id="tab-01">
+                    <li class="active"><a href="#one">1</a></li>
+                    <li><a href="#two">2</a></li>
+                    <li><a href="#three">3</a></li>
+                    <li><a href="#four">4</a></li>
+                    <li><a href="#five">5</a></li>
+                    <li><a href="#six">6</a></li>
+                  </ul>
+                  <div class="tools">
+                    <a href="javascript:;" class="collapse"></a>
+                    <a href="#grid-config" data-toggle="modal" class="config"></a>
+                    <a href="javascript:;" class="reload"></a>
+                    <a href="javascript:;" class="remove"></a>
+                  </div>
+                </div>
+                <div class="modal-body">
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="one">
+                      <div class="row column-seperation">
+                        <div class="col-md-12">
+                          <div class="table-over">
+                            <table class="table datatable" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <th>&nbsp;</th>
+                                <th width="44"><img src="images/thumbs-down.png" class="thumb"></th>
+                                <th width="44">&nbsp;</th>
+                                <th width="44">&nbsp;</th>
+                                <th width="44">&nbsp;</th>
+                                <th width="44"><img src="images/thumbs-up.png" class="thumb"></th>
+                              </tr>
+                              <tr>
+                                <td>Build kitchen cabinets</td>
+                                <td><input type="radio" name="radio1" id="one-one"></td>
+                                <td><input type="radio" name="radio1" id="one-two"></td>
+                                <td><input type="radio" name="radio1" id="one-three"></td>
+                                <td><input type="radio" name="radio1" id="one-four"></td>
+                                <td><input type="radio" name="radio1" id="one-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Lay brick or tile</td>
+                                <td><input type="radio" name="radio2" id="two-one"></td>
+                                <td><input type="radio" name="radio2" id="two-two"></td>
+                                <td><input type="radio" name="radio2" id="two-three"></td>
+                                <td><input type="radio" name="radio2" id="two-four"></td>
+                                <td><input type="radio" name="radio2" id="two-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Develop a new medicine</td>
+                                <td><input type="radio" name="radio3" id="three-one"></td>
+                                <td><input type="radio" name="radio3" id="three-two"></td>
+                                <td><input type="radio" name="radio3" id="three-three"></td>
+                                <td><input type="radio" name="radio3" id="three-four"></td>
+                                <td><input type="radio" name="radio3" id="three-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Study ways to reduce water pollution</td>
+                                <td><input type="radio" name="radio4" id="four-one"></td>
+                                <td><input type="radio" name="radio4" id="four-two"></td>
+                                <td><input type="radio" name="radio4" id="four-three"></td>
+                                <td><input type="radio" name="radio4" id="four-four"></td>
+                                <td><input type="radio" name="radio4" id="four-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Write books or plays</td>
+                                <td><input type="radio" name="radio5" id="five-one"></td>
+                                <td><input type="radio" name="radio5" id="five-two"></td>
+                                <td><input type="radio" name="radio5" id="five-three"></td>
+                                <td><input type="radio" name="radio5" id="five-four"></td>
+                                <td><input type="radio" name="radio5" id="five-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Play a musical instrument</td>
+                                <td><input type="radio" name="radio6" id="six-one"></td>
+                                <td><input type="radio" name="radio6" id="six-two"></td>
+                                <td><input type="radio" name="radio6" id="six-three"></td>
+                                <td><input type="radio" name="radio6" id="six-four"></td>
+                                <td><input type="radio" name="radio6" id="six-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Teach an individual an exercise routine</td>
+                                <td><input type="radio" name="radio7" id="seven-one"></td>
+                                <td><input type="radio" name="radio7" id="seven-two"></td>
+                                <td><input type="radio" name="radio7" id="seven-three"></td>
+                                <td><input type="radio" name="radio7" id="seven-four"></td>
+                                <td><input type="radio" name="radio7" id="seven-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Help people with personal or emotional problems</td>
+                                <td><input type="radio" name="radio8" id="eight-one"></td>
+                                <td><input type="radio" name="radio8" id="eight-two"></td>
+                                <td><input type="radio" name="radio8" id="eight-three"></td>
+                                <td><input type="radio" name="radio8" id="eight-four"></td>
+                                <td><input type="radio" name="radio8" id="eight-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Buy and sell stocks and bonds</td>
+                                <td><input type="radio" name="radio9" id="nine-one"></td>
+                                <td><input type="radio" name="radio9" id="nine-two"></td>
+                                <td><input type="radio" name="radio9" id="nine-three"></td>
+                                <td><input type="radio" name="radio9" id="nine-four"></td>
+                                <td><input type="radio" name="radio9" id="nine-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Manage a retail store</td>
+                                <td><input type="radio" name="radio10" id="ten-one"></td>
+                                <td><input type="radio" name="radio10" id="ten-two"></td>
+                                <td><input type="radio" name="radio10" id="ten-three"></td>
+                                <td><input type="radio" name="radio10" id="ten-four"></td>
+                                <td><input type="radio" name="radio10" id="ten-five"></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="two">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="table-over">
+                            <table class="table datatable" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <th>&nbsp;</th>
+                                <th width="44"><img src="images/thumbs-down.png" class="thumb"></th>
+                                <th width="44">&nbsp;</th>
+                                <th width="44">&nbsp;</th>
+                                <th width="44">&nbsp;</th>
+                                <th width="44"><img src="images/thumbs-up.png" class="thumb"></th>
+                              </tr>
+                              <tr>
+                                <td>Develop a spreadsheet using computer software</td>
+                                <td><input type="radio" name="radio11" id="eleven-one"></td>
+                                <td><input type="radio" name="radio11" id="eleven-two"></td>
+                                <td><input type="radio" name="radio11" id="eleven-three"></td>
+                                <td><input type="radio" name="radio11" id="eleven-four"></td>
+                                <td><input type="radio" name="radio11" id="eleven-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Proofread records or forms</td>
+                                <td><input type="radio" name="radio12" id="twelve-one"></td>
+                                <td><input type="radio" name="radio12" id="twelve-two"></td>
+                                <td><input type="radio" name="radio12" id="twelve-three"></td>
+                                <td><input type="radio" name="radio12" id="twelve-four"></td>
+                                <td><input type="radio" name="radio12" id="twelve-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Repair household appliances</td>
+                                <td><input type="radio" name="radio13" id="thirteen-one"></td>
+                                <td><input type="radio" name="radio13" id="thirteen-two"></td>
+                                <td><input type="radio" name="radio13" id="thirteen-three"></td>
+                                <td><input type="radio" name="radio13" id="thirteen-four"></td>
+                                <td><input type="radio" name="radio13" id="thirteen-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Raise fish in a fish hatchery</td>
+                                <td><input type="radio" name="radio14" id="fourteen-one"></td>
+                                <td><input type="radio" name="radio14" id="fourteen-two"></td>
+                                <td><input type="radio" name="radio14" id="fourteen-three"></td>
+                                <td><input type="radio" name="radio14" id="fourteen-four"></td>
+                                <td><input type="radio" name="radio14" id="fourteen-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Conduct chemical experiments</td>
+                                <td><input type="radio" name="radio15" id="fifteen-one"></td>
+                                <td><input type="radio" name="radio15" id="fifteen-two"></td>
+                                <td><input type="radio" name="radio15" id="fifteen-three"></td>
+                                <td><input type="radio" name="radio15" id="fifteen-four"></td>
+                                <td><input type="radio" name="radio15" id="fifteen-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Study the movement of planets</td>
+                                <td><input type="radio" name="radio16" id="sixteen-one"></td>
+                                <td><input type="radio" name="radio16" id="sixteen-two"></td>
+                                <td><input type="radio" name="radio16" id="sixteen-three"></td>
+                                <td><input type="radio" name="radio16" id="sixteen-four"></td>
+                                <td><input type="radio" name="radio16" id="sixteen-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Compose or arrange music</td>
+                                <td><input type="radio" name="radio17" id="seventeen-one"></td>
+                                <td><input type="radio" name="radio17" id="seventeen-two"></td>
+                                <td><input type="radio" name="radio17" id="seventeen-three"></td>
+                                <td><input type="radio" name="radio17" id="seventeen-four"></td>
+                                <td><input type="radio" name="radio17" id="seventeen-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Draw pictures</td>
+                                <td><input type="radio" name="radio18" id="eighteen-one"></td>
+                                <td><input type="radio" name="radio18" id="eighteen-two"></td>
+                                <td><input type="radio" name="radio18" id="eighteen-three"></td>
+                                <td><input type="radio" name="radio18" id="eighteen-four"></td>
+                                <td><input type="radio" name="radio18" id="eighteen-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Give career guidance to people</td>
+                                <td><input type="radio" name="radio19" id="nineteen-one"></td>
+                                <td><input type="radio" name="radio19" id="nineteen-two"></td>
+                                <td><input type="radio" name="radio19" id="nineteen-three"></td>
+                                <td><input type="radio" name="radio19" id="nineteen-four"></td>
+                                <td><input type="radio" name="radio19" id="nineteen-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Perform rehabilitation therapy</td>
+                                <td><input type="radio" name="radio20" id="twenty-one"></td>
+                                <td><input type="radio" name="radio20" id="twenty-two"></td>
+                                <td><input type="radio" name="radio20" id="twenty-three"></td>
+                                <td><input type="radio" name="radio20" id="twenty-four"></td>
+                                <td><input type="radio" name="radio20" id="twenty-five"></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="three">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="table-over">
+                            <table class="table datatable" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <th>&nbsp;</th>
+                                <th width="44"><img src="images/thumbs-down.png" class="thumb"></th>
+                                <th width="44">&nbsp;</th>
+                                <th width="44">&nbsp;</th>
+                                <th width="44">&nbsp;</th>
+                                <th width="44"><img src="images/thumbs-up.png" class="thumb"></th>
+                              </tr>
+                              <tr>
+                                <td>Operate a beauty salon or barber shop</td>
+                                <td><input type="radio" name="radio21" id="twenty1-one"></td>
+                                <td><input type="radio" name="radio21" id="twenty1-two"></td>
+                                <td><input type="radio" name="radio21" id="twenty1-three"></td>
+                                <td><input type="radio" name="radio21" id="twenty1-four"></td>
+                                <td><input type="radio" name="radio21" id="twenty1-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Manage a department within a large company</td>
+                                <td><input type="radio" name="radio22" id="twenty2-one"></td>
+                                <td><input type="radio" name="radio22" id="twenty2-two"></td>
+                                <td><input type="radio" name="radio22" id="twenty2-three"></td>
+                                <td><input type="radio" name="radio22" id="twenty2-four"></td>
+                                <td><input type="radio" name="radio22" id="twenty2-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Load computer software into a large computer network</td>
+                                <td><input type="radio" name="radio23" id="twenty3-one"></td>
+                                <td><input type="radio" name="radio23" id="twenty3-two"></td>
+                                <td><input type="radio" name="radio23" id="twenty3-three"></td>
+                                <td><input type="radio" name="radio23" id="twenty3-four"></td>
+                                <td><input type="radio" name="radio23" id="twenty3-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Operate a calculator</td>
+                                <td><input type="radio" name="radio24" id="twenty4-one"></td>
+                                <td><input type="radio" name="radio24" id="twenty4-two"></td>
+                                <td><input type="radio" name="radio24" id="twenty4-three"></td>
+                                <td><input type="radio" name="radio24" id="twenty4-four"></td>
+                                <td><input type="radio" name="radio24" id="twenty4-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Assemble electronic parts</td>
+                                <td><input type="radio" name="radio25" id="twenty5-one"></td>
+                                <td><input type="radio" name="radio25" id="twenty5-two"></td>
+                                <td><input type="radio" name="radio25" id="twenty5-three"></td>
+                                <td><input type="radio" name="radio25" id="twenty5-four"></td>
+                                <td><input type="radio" name="radio25" id="twenty5-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Drive a truck to deliver packages to offices and homes</td>
+                                <td><input type="radio" name="radio26" id="twenty6-one"></td>
+                                <td><input type="radio" name="radio26" id="twenty6-two"></td>
+                                <td><input type="radio" name="radio26" id="twenty6-three"></td>
+                                <td><input type="radio" name="radio26" id="twenty6-four"></td>
+                                <td><input type="radio" name="radio26" id="twenty6-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Examine blood samples using a microscope</td>
+                                <td><input type="radio" name="radio27" id="twenty7-one"></td>
+                                <td><input type="radio" name="radio27" id="twenty7-two"></td>
+                                <td><input type="radio" name="radio27" id="twenty7-three"></td>
+                                <td><input type="radio" name="radio27" id="twenty7-four"></td>
+                                <td><input type="radio" name="radio27" id="twenty7-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Investigate the cause of a fire</td>
+                                <td><input type="radio" name="radio28" id="twenty8-one"></td>
+                                <td><input type="radio" name="radio28" id="twenty8-two"></td>
+                                <td><input type="radio" name="radio28" id="twenty8-three"></td>
+                                <td><input type="radio" name="radio28" id="twenty8-four"></td>
+                                <td><input type="radio" name="radio28" id="twenty8-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Create special effects for movies</td>
+                                <td><input type="radio" name="radio29" id="twenty9-one"></td>
+                                <td><input type="radio" name="radio29" id="twenty9-two"></td>
+                                <td><input type="radio" name="radio29" id="twenty9-three"></td>
+                                <td><input type="radio" name="radio29" id="twenty9-four"></td>
+                                <td><input type="radio" name="radio29" id="twenty9-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Paint sets for plays</td>
+                                <td><input type="radio" name="radio30" id="thirty-one"></td>
+                                <td><input type="radio" name="radio30" id="thirty-two"></td>
+                                <td><input type="radio" name="radio30" id="thirty-three"></td>
+                                <td><input type="radio" name="radio30" id="thirty-four"></td>
+                                <td><input type="radio" name="radio30" id="thirty-five"></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="four">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="table-over">
+                            <table class="table datatable" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <th>&nbsp;</th>
+                                <th width="44"><img src="images/thumbs-down.png" class="thumb"></th>
+                                <th width="44">&nbsp;</th>
+                                <th width="44">&nbsp;</th>
+                                <th width="44">&nbsp;</th>
+                                <th width="44"><img src="images/thumbs-up.png" class="thumb"></th>
+                              </tr>
+                              <tr>
+                                <td>Do volunteer work at a non-profit organization</td>
+                                <td><input type="radio" name="radio31" id="thirty1-one"></td>
+                                <td><input type="radio" name="radio31" id="thirty1-two"></td>
+                                <td><input type="radio" name="radio31" id="thirty1-three"></td>
+                                <td><input type="radio" name="radio31" id="thirty1-four"></td>
+                                <td><input type="radio" name="radio31" id="thirty1-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Teach children how to play sports</td>
+                                <td><input type="radio" name="radio32" id="thirty2-one"></td>
+                                <td><input type="radio" name="radio32" id="thirty2-two"></td>
+                                <td><input type="radio" name="radio32" id="thirty2-three"></td>
+                                <td><input type="radio" name="radio32" id="thirty2-four"></td>
+                                <td><input type="radio" name="radio32" id="thirty2-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Start your own business</td>
+                                <td><input type="radio" name="radio33" id="thirty3-one"></td>
+                                <td><input type="radio" name="radio33" id="thirty3-two"></td>
+                                <td><input type="radio" name="radio33" id="thirty3-three"></td>
+                                <td><input type="radio" name="radio33" id="thirty3-four"></td>
+                                <td><input type="radio" name="radio33" id="thirty3-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Negotiate business contracts</td>
+                                <td><input type="radio" name="radio34" id="thirty4-one"></td>
+                                <td><input type="radio" name="radio34" id="thirty4-two"></td>
+                                <td><input type="radio" name="radio34" id="thirty4-three"></td>
+                                <td><input type="radio" name="radio34" id="thirty4-four"></td>
+                                <td><input type="radio" name="radio34" id="thirty4-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Keep shipping and receiving records</td>
+                                <td><input type="radio" name="radio35" id="thirty5-one"></td>
+                                <td><input type="radio" name="radio35" id="thirty5-two"></td>
+                                <td><input type="radio" name="radio35" id="thirty5-three"></td>
+                                <td><input type="radio" name="radio35" id="thirty5-four"></td>
+                                <td><input type="radio" name="radio35" id="thirty5-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Calculate the wages of employees</td>
+                                <td><input type="radio" name="radio36" id="thirty6-one"></td>
+                                <td><input type="radio" name="radio36" id="thirty6-two"></td>
+                                <td><input type="radio" name="radio36" id="thirty6-three"></td>
+                                <td><input type="radio" name="radio36" id="thirty6-four"></td>
+                                <td><input type="radio" name="radio36" id="thirty6-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Test the quality of parts before shipment</td>
+                                <td><input type="radio" name="radio37" id="thirty7-one"></td>
+                                <td><input type="radio" name="radio37" id="thirty7-two"></td>
+                                <td><input type="radio" name="radio37" id="thirty7-three"></td>
+                                <td><input type="radio" name="radio37" id="thirty7-four"></td>
+                                <td><input type="radio" name="radio37" id="thirty7-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Repair and install locks</td>
+                                <td><input type="radio" name="radio38" id="thirty8-one"></td>
+                                <td><input type="radio" name="radio38" id="thirty8-two"></td>
+                                <td><input type="radio" name="radio38" id="thirty8-three"></td>
+                                <td><input type="radio" name="radio38" id="thirty8-four"></td>
+                                <td><input type="radio" name="radio38" id="thirty8-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Develop a way to better predict the weather</td>
+                                <td><input type="radio" name="radio39" id="thirty9-one"></td>
+                                <td><input type="radio" name="radio39" id="thirty9-two"></td>
+                                <td><input type="radio" name="radio39" id="thirty9-three"></td>
+                                <td><input type="radio" name="radio39" id="thirty9-four"></td>
+                                <td><input type="radio" name="radio39" id="thirty9-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Work in a biology lab</td>
+                                <td><input type="radio" name="radio40" id="fourty-one"></td>
+                                <td><input type="radio" name="radio40" id="fourty-two"></td>
+                                <td><input type="radio" name="radio40" id="fourty-three"></td>
+                                <td><input type="radio" name="radio40" id="fourty-four"></td>
+                                <td><input type="radio" name="radio40" id="fourty-five"></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="five">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="table-over">
+                            <table class="table datatable" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <th>&nbsp;</th>
+                                <th width="44"><img src="images/thumbs-down.png" class="thumb"></th>
+                                <th width="44">&nbsp;</th>
+                                <th width="44">&nbsp;</th>
+                                <th width="44">&nbsp;</th>
+                                <th width="44"><img src="images/thumbs-up.png" class="thumb"></th>
+                              </tr>
+                              <tr>
+                                <td>Write scripts for movies or television shows</td>
+                                <td><input type="radio" name="radio41" id="fourty1-one"></td>
+                                <td><input type="radio" name="radio41" id="fourty1-two"></td>
+                                <td><input type="radio" name="radio41" id="fourty1-three"></td>
+                                <td><input type="radio" name="radio41" id="fourty1-four"></td>
+                                <td><input type="radio" name="radio41" id="fourty1-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Perform jazz or tap dance</td>
+                                <td><input type="radio" name="radio42" id="fourty2-one"></td>
+                                <td><input type="radio" name="radio42" id="fourty2-two"></td>
+                                <td><input type="radio" name="radio42" id="fourty2-three"></td>
+                                <td><input type="radio" name="radio42" id="fourty2-four"></td>
+                                <td><input type="radio" name="radio42" id="fourty2-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Teach sign language to people with hearing disabilities</td>
+                                <td><input type="radio" name="radio43" id="fourty3-one"></td>
+                                <td><input type="radio" name="radio43" id="fourty3-two"></td>
+                                <td><input type="radio" name="radio43" id="fourty3-three"></td>
+                                <td><input type="radio" name="radio43" id="fourty3-four"></td>
+                                <td><input type="radio" name="radio43" id="fourty3-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Help conduct a group therapy session</td>
+                                <td><input type="radio" name="radio44" id="fourty4-one"></td>
+                                <td><input type="radio" name="radio44" id="fourty4-two"></td>
+                                <td><input type="radio" name="radio44" id="fourty4-three"></td>
+                                <td><input type="radio" name="radio44" id="fourty4-four"></td>
+                                <td><input type="radio" name="radio44" id="fourty4-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Represent a client in a lawsuit</td>
+                                <td><input type="radio" name="radio45" id="fourty5-one"></td>
+                                <td><input type="radio" name="radio45" id="fourty5-two"></td>
+                                <td><input type="radio" name="radio45" id="fourty5-three"></td>
+                                <td><input type="radio" name="radio45" id="fourty5-four"></td>
+                                <td><input type="radio" name="radio45" id="fourty5-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Market a new line of clothing</td>
+                                <td><input type="radio" name="radio46" id="fourty6-one"></td>
+                                <td><input type="radio" name="radio46" id="fourty6-two"></td>
+                                <td><input type="radio" name="radio46" id="fourty6-three"></td>
+                                <td><input type="radio" name="radio46" id="fourty6-four"></td>
+                                <td><input type="radio" name="radio46" id="fourty6-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Inventory supplies using a hand-held computer</td>
+                                <td><input type="radio" name="radio47" id="fourty7-one"></td>
+                                <td><input type="radio" name="radio47" id="fourty7-two"></td>
+                                <td><input type="radio" name="radio47" id="fourty7-three"></td>
+                                <td><input type="radio" name="radio47" id="fourty7-four"></td>
+                                <td><input type="radio" name="radio47" id="fourty7-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Record rent payments</td>
+                                <td><input type="radio" name="radio48" id="fourty8-one"></td>
+                                <td><input type="radio" name="radio48" id="fourty8-two"></td>
+                                <td><input type="radio" name="radio48" id="fourty8-three"></td>
+                                <td><input type="radio" name="radio48" id="fourty8-four"></td>
+                                <td><input type="radio" name="radio48" id="fourty8-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Set up and operate machines to make products</td>
+                                <td><input type="radio" name="radio49" id="fourty9-one"></td>
+                                <td><input type="radio" name="radio49" id="fourty9-two"></td>
+                                <td><input type="radio" name="radio49" id="fourty9-three"></td>
+                                <td><input type="radio" name="radio49" id="fourty9-four"></td>
+                                <td><input type="radio" name="radio49" id="fourty9-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Put out forest fires</td>
+                                <td><input type="radio" name="radio50" id="fifty-one"></td>
+                                <td><input type="radio" name="radio50" id="fifty-two"></td>
+                                <td><input type="radio" name="radio50" id="fifty-three"></td>
+                                <td><input type="radio" name="radio50" id="fifty-four"></td>
+                                <td><input type="radio" name="radio50" id="fifty-five"></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="six">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="table-over">
+                            <table class="table datatable" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <th>&nbsp;</th>
+                                <th width="44"><img src="images/thumbs-down.png" class="thumb"></th>
+                                <th width="44">&nbsp;</th>
+                                <th width="44">&nbsp;</th>
+                                <th width="44">&nbsp;</th>
+                                <th width="44"><img src="images/thumbs-up.png" class="thumb"></th>
+                              </tr>
+                              <tr>
+                                <td>Invent a replacement for sugar</td>
+                                <td><input type="radio" name="radio51" id="fifty1-one"></td>
+                                <td><input type="radio" name="radio51" id="fifty1-two"></td>
+                                <td><input type="radio" name="radio51" id="fifty1-three"></td>
+                                <td><input type="radio" name="radio51" id="fifty1-four"></td>
+                                <td><input type="radio" name="radio51" id="fifty1-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Do laboratory tests to identify diseases</td>
+                                <td><input type="radio" name="radio52" id="fifty2-one"></td>
+                                <td><input type="radio" name="radio52" id="fifty2-two"></td>
+                                <td><input type="radio" name="radio52" id="fifty2-three"></td>
+                                <td><input type="radio" name="radio52" id="fifty2-four"></td>
+                                <td><input type="radio" name="radio52" id="fifty2-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Sing in a band</td>
+                                <td><input type="radio" name="radio53" id="fifty3-one"></td>
+                                <td><input type="radio" name="radio53" id="fifty3-two"></td>
+                                <td><input type="radio" name="radio53" id="fifty3-three"></td>
+                                <td><input type="radio" name="radio53" id="fifty3-four"></td>
+                                <td><input type="radio" name="radio53" id="fifty3-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Edit movies</td>
+                                <td><input type="radio" name="radio54" id="fifty4-one"></td>
+                                <td><input type="radio" name="radio54" id="fifty4-two"></td>
+                                <td><input type="radio" name="radio54" id="fifty4-three"></td>
+                                <td><input type="radio" name="radio54" id="fifty4-four"></td>
+                                <td><input type="radio" name="radio54" id="fifty4-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Take care of children at a day-care center</td>
+                                <td><input type="radio" name="radio55" id="fifty5-one"></td>
+                                <td><input type="radio" name="radio55" id="fifty5-two"></td>
+                                <td><input type="radio" name="radio55" id="fifty5-three"></td>
+                                <td><input type="radio" name="radio55" id="fifty5-four"></td>
+                                <td><input type="radio" name="radio55" id="fifty5-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Teach a high-school class</td>
+                                <td><input type="radio" name="radio56" id="fifty6-one"></td>
+                                <td><input type="radio" name="radio56" id="fifty6-two"></td>
+                                <td><input type="radio" name="radio56" id="fifty6-three"></td>
+                                <td><input type="radio" name="radio56" id="fifty6-four"></td>
+                                <td><input type="radio" name="radio56" id="fifty6-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Sell merchandise at a department store</td>
+                                <td><input type="radio" name="radio57" id="fifty7-one"></td>
+                                <td><input type="radio" name="radio57" id="fifty7-two"></td>
+                                <td><input type="radio" name="radio57" id="fifty7-three"></td>
+                                <td><input type="radio" name="radio57" id="fifty7-four"></td>
+                                <td><input type="radio" name="radio57" id="fifty7-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Manage a clothing store</td>
+                                <td><input type="radio" name="radio58" id="fifty8-one"></td>
+                                <td><input type="radio" name="radio58" id="fifty8-two"></td>
+                                <td><input type="radio" name="radio58" id="fifty8-three"></td>
+                                <td><input type="radio" name="radio58" id="fifty8-four"></td>
+                                <td><input type="radio" name="radio58" id="fifty8-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Keep inventory records</td>
+                                <td><input type="radio" name="radio59" id="fifty9-one"></td>
+                                <td><input type="radio" name="radio59" id="fifty9-two"></td>
+                                <td><input type="radio" name="radio59" id="fifty9-three"></td>
+                                <td><input type="radio" name="radio59" id="fifty9-four"></td>
+                                <td><input type="radio" name="radio59" id="fifty9-five"></td>
+                              </tr>
+                              <tr>
+                                <td>Stamp, sort, and distribute mail for an organization</td>
+                                <td><input type="radio" name="radio60" id="sixty-one"></td>
+                                <td><input type="radio" name="radio60" id="sixty-two"></td>
+                                <td><input type="radio" name="radio60" id="sixty-three"></td>
+                                <td><input type="radio" name="radio60" id="sixty-four"></td>
+                                <td><input type="radio" name="radio60" id="sixty-five"></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer no-border">
+                  <button type="button" class="btn btn-reset" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 copyright">&copy; SURESCORE INC</div>
+      </div>
+    </div>
+  </footer>
+  <span class='scrollup'><img src="images/top.png" alt="scroll to top"></span>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/jquery-ui-1.10.1.custom.min.js"></script>
+  <script src="js/jquery.slimscroll.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/master-layout.js"></script>
+  <script src="js/tabs_accordian.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>

@@ -446,7 +446,8 @@ footer {
 
 a.view-icon,
 a.edit-icon,
-a.play-icon{
+a.play-icon,
+a.download-icon{
     width: 18px;
     height: 18px;
     display: inline-block;
@@ -460,6 +461,10 @@ a.edit-icon{
 }
 a.play-icon{
     background: url(../../images/play.png) 0 0 no-repeat;
+    background-size: 100% auto;
+}
+a.download-icon{
+    background: url(../../images/download.png) 0 0 no-repeat;
     background-size: 100% auto;
 }
 /*.delete{
@@ -525,6 +530,9 @@ table.datatable {
     }
     .locked {
         background-position: left bottom;
+    }
+    .thumb{
+        width:20px;
     }
 }
 table.inbox{
