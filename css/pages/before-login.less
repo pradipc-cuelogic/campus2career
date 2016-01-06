@@ -52,7 +52,8 @@
             &.accountType-icon:after,
             &.username-icon:after,
             &.email-icon:after,
-            &.password-icon:after {
+            &.password-icon:after,
+            &.message-icon:after{
                 content: "";
                 width: 20px;
                 height: 20px;
@@ -71,6 +72,13 @@
             &.password-icon:after {
                 background-position: left -30px;
                 width: 18px;
+            }
+            &.message-icon{
+                height: 104px;
+            }
+            &.message-icon:after{
+                background-position: left -131px;
+                top:8px;
             }
             &.select-field{
                 padding-left: @inputHight;
@@ -121,7 +129,8 @@
             }
             input[type="text"],
             input[type="email"],
-            input[type="password"] {
+            input[type="password"],
+            textarea{
                 width: 100%;
                 background: none;
                 border: 0;
@@ -133,7 +142,16 @@
 				-o-transition: @transitionBg;
 				transition: @transitionBg;
             }
-            input:focus {
+            textarea{
+                height:100px;
+                min-height:100px;
+                max-height:100px;
+                min-width:100%;
+                max-width:100%;
+                padding:3px 3px 3px 44px;
+            }
+            input:focus,
+            textarea:focus{
                 outline: 0;
                 box-shadow: none;
                 background: rgba(0, 0, 0, 0.4);
